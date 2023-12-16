@@ -1,0 +1,26 @@
+.rotate-screen-container{
+  display: none;
+}
+
+
+@media(max-width: 1000px) and (orientation: landscape){
+  /* container of rotate screen para */
+  .rotate-screen-container{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 30;
+    top: 0;
+    background: black;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* paragraph inside rotate screen container */
+  .rotate-screen-container p{
+    width: 90vw;
+    font-size: 2.4rem;
+    line-height: 4rem;
+  }
+}

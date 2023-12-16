@@ -1,0 +1,567 @@
+/*adjusting some setting of viewport height*/
+html{
+  height: -webkit-fill-available;
+}
+/*some setting of body element*/
+body{
+  height: -webkit-fill-available;
+  height: 100dvh;
+  overflow: scroll;
+  background: #d0d0d;
+  color: black;
+}
+
+
+
+/*-------------------------------------------*/
+/*           VIDEO IFRAME SECTION            */
+/*-------------------------------------------*/
+/* contains box of iframe(#box-of-video) */
+#normal-content-container{
+  height: 100vh;
+  overflow-y: auto;
+}
+/* contains iframe container & title para */
+#box-of-video{
+  background: #d0d0d;
+  overflow: hidden;
+  color: black;
+  margin-top: 1%;
+  overflow-y: auto;
+}
+/* contains iframe tag and title para */
+#iframe-container{
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1/0.6;
+  position: sticky;
+  top: 0px;
+  background: whitesmoke;
+}
+/* iframe tag */
+#iframe-container iframe{
+  width: 150%;
+  height: 100%;
+  border: none;
+}
+/* title of video (span tag) */
+#title{
+  margin: 2% 2%;
+}
+/* views & upload time para */
+/* contains two span tag */
+#viewsAndUploadTime{
+  margin: 0% 2% 2% 2%;
+  margin-bottom: 4%;
+  font-weight: 350;
+  font-size: 0.9rem;
+  color: #242424;
+}
+/*==========================================*/
+
+
+
+
+/*-------------------------------------------*/
+/*          CHANNEL DETAIL SECTION           */
+/*-------------------------------------------*/
+/* contains logo, channelName, subscribe */
+#channel-detail-box{
+  display: flex;
+  align-items: center;
+  padding: 4px 2%;
+  width: 96%;
+  position: relative;
+}
+/* logo of channel (image tag)*/
+#channel-detail-box img{
+  height: 40px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  margin-right: 5px;
+  border: 1px solid #d1d1d1;
+}
+/* name of channel */
+#channel-name-para{
+  color: black;
+  display: inline-block;
+  width: 50%;
+  overflow-x: scroll;
+  height: 20px;
+}
+/* subscribe button or box */
+#subscribe-box{
+  border-radius: 30px;
+  padding: 5px 7px;
+  background: #b02c2c;
+  font-size: 1.2rem;
+  position: absolute;
+  color: black;
+  right: 2%;
+}
+/*==========================================*/
+
+
+
+
+/*-------------------------------------------*/
+/*             BUTTONS SECTION               */
+/*-------------------------------------------*/
+/* contains like, share, watch later btn */
+#button-container{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 1.5%;
+  margin-bottom: 4%;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  justify-content: space-between;
+}
+/* giving same styles to all btn box */
+/* contains button image */
+.btn-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  background: #e0e0e0;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 4px 8px;
+  height: 35px;
+  box-sizing: border-box;
+}
+/* giving same styles to all btn images */
+.btn-box img{
+  height: 70%;
+  margin-right: 6px;
+  aspect-ratio: 1.1/1;
+}
+/* contains like dislike btn tohether */
+#like-dislike-box{
+  margin-left: 4px;
+}
+/* hr line between like & dislike image */
+#like-dislike-box hr{
+  height: 20px;
+  border: 0.5px solid #3d3d3d;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+/* image of like & dislike box */
+#like-dislike-box img{
+  margin-left: 8px;
+}
+/*this is dislike button*/
+#like-dislike-box img:nth-child(4){
+  transform: rotate(180deg);
+}
+
+/*----save btn box*/
+#save-box{
+  margin: 8px;
+}
+/*image of save btn box*/
+#save-box img{
+  margin-right: 6px;
+}
+
+/*----share btn box*/
+#share-box{
+  margin: 8px;
+}
+/*image of share box*/
+#share-box img{
+  margin-right: 6px;
+}
+/*==========================================*/
+
+
+
+
+/*-------------------------------------------*/
+/*             COMMENTS SECTION              */
+/*-------------------------------------------*/
+/* container of whole comment section */
+#comment-container{
+ 
+}
+/* contains comment numbers and dummy comment box */
+#comment-box{
+  width: 94%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  background: #e0e0e0;
+  padding: 2% 2%;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  color: black;
+  margin-bottom: 2%;
+}
+/* contains default displaying comment */
+#dummy-comment{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+/*commenter profile image (tag)*/
+#dummy-comment img{
+  width: 90%;
+  margin-right: 2%;
+}
+
+
+/*-- actual comments section --*/
+/* it will work like full comment page */
+#comment-ka-main-container{
+  background: #d0d0d;
+  width: 96%;
+  padding: 2%;
+  display: none;
+  height: 95%;
+  margin-top: 1px;
+  overflow: hidden;
+}
+
+/* navbar of comment */
+/* contains cut button */
+#navbar-of-comment{
+  width: 100%;
+  background: #e0e0e0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3%;
+  padding: 1% 0.5%;
+  border-radius: 5px;
+  position: sticky;
+  top: 3px;
+  font-size: 1.2rem;
+  font-weight: 450;
+  z-index: 8;
+}
+/* button to close comment page */
+#comment-cross-button{
+  height: 25px;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+/* cut image */
+#comment-cross-button img{
+  height: 100%;
+}
+
+
+/*-- comment boxes container & boxes --*/
+/* comment boxes will append here */
+.container-of-boxes-of-comment{
+  height: 100%;
+  box-sizing: border-box;
+  width: 100%;
+  overflow-y: auto;
+  padding-top: 4px;
+  padding-bottom: 10px;
+  position: relative;
+  z-index: 10;
+}
+/* box of comment */
+.comment-box{
+  width: 100%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2% 2%;
+  display: flex;
+  color: black;
+  margin-bottom: 2%;
+  font-size: 1.1rem;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+/* comment paragraph */
+.comment-box span{
+  width: 100%;
+  color: black;
+  overflow: hidden;
+  height: auto;
+  word-break: break-all;
+}
+/* paragraph or comment */
+.paragraph-of-comment{
+  display: -webkit-box;
+  max-width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+}
+/* name of the commenter will display */
+.commenter-name{
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #232323;
+  width: 100%;
+}
+/* container of image (commenter image) */
+.img-container{
+  height: 100%;
+  width: 13vw;
+  display: flex;
+  align-items: flex-start !important;
+}
+/* frofile image of commenter (img tag) */
+.img-container img{
+  width: 80%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+/*==========================================*/
+
+
+
+
+/*-------------------------------------------*/
+/*          PC COMMENT BOX SECTION           */
+/*-------------------------------------------*/
+/* main-container for pc comment */
+.pc-comment-box{
+  width: 97%;
+  box-sizing: border-box;
+  float: right;
+  display: none;
+}
+/* comment number displayer */
+.pc-comment-box .commentNumber{
+  margin-bottom: 13px;
+}
+
+
+/*-- Post comment section-- */
+.post-comment{
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  float: right;
+}
+/* your profile image */
+.pc-comment-box img{
+  width: 50px;
+  display: inline-block;
+}
+/* input tag for posting comment */
+.pc-comment-box input{
+  width: calc(98% - 50px);
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 10px 5px;
+  font-size: 1.1rem;
+  border: none;
+  border-bottom: 1px solid #eeeeee;
+  outline: none;
+  margin-left: 2%;
+  background: transparent;
+}
+/* comment boxes container or pc comment sec */
+.pc-comment-box .container-of-boxes-of-comment{
+  width: 100% !important;
+  margin-top: 25px;/*  */
+}
+/* comment boxes or pc comment sec */
+.pc-comment-box .container-of-boxes-of-comment .comment-box{
+  padding-left: 0px !important;
+  padding-right: 10px !important;
+}
+/* horizontal line bat bottom or every comment */
+.pc-comment-box hr{
+  margin: 1vmin 0px;
+}
+/*==========================================*/
+
+
+
+
+/*-------------------------------------------*/
+/*         SUGGESTED VIDEO SECTION           */
+/*-------------------------------------------*/
+#videos-container{
+  width: 99vw;
+  margin: 3px 0.5vw;
+  padding-bottom: 10px !important;
+  margin-bottom: 0px !important;
+}
+/* note -> The styling of this section is in css file named- all-vid-sec.css */
+/*==========================================*/
+
+
+
+
+
+/*-------------------------------------------*/
+/*           MEDIA QUERT SECTION             */
+/*-------------------------------------------*/
+/* For mobiles */
+@media(max-width: 900px){
+  /* giving max height to comment box */
+  #comment-box{
+    max-height: 75px;
+  }
+ 
+  /* giving max width to commenter profile image */
+  #dummy-comment img{
+    max-width: 40px;
+  }
+  
+  /* container of image (commenter image) */
+  .img-container{
+    max-width: 75px;
+  }
+
+  /* profile picture or commenter (img tag) */
+  .img-container img{
+    max-width: 50px;
+  } 
+}
+
+
+
+
+/* For mobile landscape mode */
+@media(max-height: 450px){
+  /* it contains like, share etc button */
+  /* all buttons will align at flex start */
+  #button-container{
+    justify-content: flex-start;
+  }
+  
+  /* box of button */
+  .btn-box{
+    margin-right: 25px;
+  }
+  
+  /* save button */
+  #save-box{
+    margin-right: 27px;
+  }
+}
+
+
+
+
+/* For adjusting width of dummy comment image */
+@media(min-width: 900px){
+  /* commenter profile image (tag) */
+  #dummy-comment img{
+    width: 50px;
+  }
+}
+
+
+
+
+/* For lablets, there will be two sections */
+@media(min-width: 1100px){
+  /* displaying pc comment section */
+  .pc-comment-box{
+    display: inline-block;
+  }
+
+  /* container, from iframe to suggested video section */
+  .container-to-initialise-grid{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  
+  /* container from iframe to comments section */
+  .grid-left{
+    width: 60vw;
+    height: 95vh;
+    overflow-y: auto;
+    margin-left: 1vw;
+  }
+  
+  /* container of suggested videos */
+  #videos-container{
+    width: 38vw;
+    display: inline-block;
+    height: 95vh;
+    overflow-y: auto !important;
+    margin-top: 1%;
+  }
+  
+  /* container of thumbnail image */
+  .image-con{
+    border-radius: 5px !important;
+    overflow: hidden;
+  }
+  
+  /* container from iframe to suggested videos */
+  #normal-content-container{
+    overflow: hidden;
+  }
+  
+  /* box or videos */
+  .video-box{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    margin-bottom: 1vh;
+    grid-column-gap: 10px;
+    background: transparent;
+  }
+  
+  /* container of channel logo */
+  .channel-image-con{
+    display: none;
+  }
+  
+  /* it contains mostly paras(span tag) */
+  .bottom-con{
+    height: 100%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  
+  /* title of video */
+  .title{
+    -webkit-line-clamp: 3;
+  }
+  
+  /* contains default displaying comment */
+  #dummy-comment{
+    display: none;
+  }
+  
+  /* horizontal line at bottom or every comment box */
+  #hr-at-end-of-mobile-comment{
+    display: none;
+  }
+  
+  /* contains comment numbers and dummy comment box */
+  #comment-box{
+    margin-bottom: 0;
+    box-sizing: border-box;
+    width: 97%;
+    padding-left: 0;
+    float: right;
+    display: none;
+  }
+  
+  /* comments number dispayer fir pc */
+  #commentNumber{
+    display: inline-block !important;
+  }
+  
+  /* container of image (commenter image) */
+  .img-container{
+    max-width: 75px;
+  }
+}

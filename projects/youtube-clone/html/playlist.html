@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page title</title>
+  <!-- Linking to loader css -->
+  <link rel="stylesheet" href="../css/multi-css/loader.css">
+  <!--linking to all navbar.css-->
+  <link rel="stylesheet" href="../css/multi-css/all-nav.css">
+  <!--linking to all video section css-->
+  <link rel="stylesheet" href="../css/multi-css/all-vid-sec.css">
+  <!-- linking all bottom nav css -->
+  <link rel="stylesheet" href="../css/multi-css/all-bottom-nav.css">
+  <!-- linking to channel preview css -->
+  <link rel="stylesheet" href="../css/normal-css/channel-preview.css"> 
+  <!-- linking to playlist css -->
+  <link rel="stylesheet" href="../css/normal-css/playlist.css">
+</head>
+<body>
+<!------------------------------------------->
+<!--            LOADER SECTION             -->
+<!------------------------------------------->
+<div class="loader-container">
+  <div class="loader"></div>
+</div>
+<!--=======================================-->
+
+  
+  
+  
+<div id="page-ka-main-container">
+<!------------------------------------------->
+<!--            NAVBAR SECTION             -->
+<!------------------------------------------->
+<!-- navigation bar -->
+<nav id="navbar">
+  <!--this is nav left side contains logo-->
+  <div id="nav-left">
+     <img src="../assets/youtube.png" id="channel-logo-on-top"/>
+     <!-- channel name on nav -->
+     <span id="channel-name-on-nav">
+       code with harry
+     </span>
+  </div>
+ 
+ 
+  <!--nav middle, contains search bar for pc-->
+  <div id="nav-middle">
+    <div class="wrapper">
+       <div id="pc-search-box">
+           <input type="text" placeholder="Search for a video">
+           <!-- Image box for search icon-->
+           <div class="image-box-for-search-icon">
+             <img src="../assets/search.png"/>
+           </div>
+       </div>
+     
+       <!-- mic image box -->
+       <div class="image-box-for-mic-icon">
+           <img src="../assets/mic.png"/>
+       </div>
+    </div><!-- wrapper -->
+  </div><!-- nav middle -->
+ 
+ 
+  <div id="nav-right">
+     <a href="html/search-page.html">
+       <img src="../assets/search.png" id="search"/>
+     </a>  
+     <img src="../assets/bell.png"/>
+  </div>
+</nav>
+<!--=======================================-->
+
+
+
+
+<div class="container-to-initialise-grid">
+ <div class="grid-left">
+    
+    <!------------------------------------------->
+    <!--        PLAYLIST INFO SECTION          -->
+    <!------------------------------------------->
+    <!------ top section ------>
+    <main id="top-sec-con">
+       <!-- playlist thumbnail -->
+       <div id="playlist-thumbnail-con">
+         <img src="" id="playlist-thumbnail-img"/>
+       </div><!-- playlist-thumbnail -->
+ 
+       <!-- playlist title -->
+       <span id="playlist-title">
+         Nostalgia | CID | सीआईडी | Full Episodes
+       </span>
+ 
+       <!-- delails channel-name, vid-count etc-->
+       <div id="playlist-detail-con">
+          <span id="playlist-channel-name">
+            Liv Crime
+          </span>
+          <!-- videos-count & opload time -->
+          <div id="a-row">
+             <span id="playlist-vid-count">
+               40 Videos 
+             </span>
+             <span id="playlist-upload-time"></span>
+          </div>
+       </div>
+    </main>
+    
+</div><!-- grid-left -->
+<!--=======================================-->
+
+
+
+<!------------------------------------------->
+<!--            VIDEOS SECTION             -->
+<!------------------------------------------->
+<!--videos will display here-->
+<div id="videos-container">
+  <!-- videos will be displayed mere by javascript -->  
+</div><!-- videos container -->
+</div><!--page ka main container-->
+</div><!-- container to initialise grid -->
+<!--=======================================-->
+
+
+
+
+<!------------------------------------------->
+<!--          JAVASCRIPT SECTION           -->
+<!------------------------------------------->
+<!-- linking to connector -->
+<script src="../js/connector-for-history.js"></script>
+<!-- playlist js file -->
+<script src="../js/playlist.js"></script>
+<!-- Loader js file -->
+<script src="../js/loader.js"></script>
+</body>
+</html>

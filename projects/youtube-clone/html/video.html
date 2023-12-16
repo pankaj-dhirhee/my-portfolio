@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page title</title> 
+  <!-- Linking to loader css -->
+  <link rel="stylesheet" href="../css/multi-css/loader.css">
+  <!--linking to all-video-page.css-->
+  <link rel="stylesheet" href="../css/multi-css/all-vid-sec.css">
+  <!--linking to all navbar.css-->
+  <link rel="stylesheet" href="../css/multi-css/all-nav.css">
+  <!--linking to all video section css-->
+  <link rel="stylesheet" href="../css/multi-css/all-vid-sec.css"> 
+  <!--linking to its play page css-->
+ <link rel="stylesheet" href="../css/normal-css/vid-play-page.css">
+</head>
+<body>
+<!------------------------------------------->
+<!--            LOADER SECTION             -->
+<!------------------------------------------->
+<div class="loader-container">
+  <div class="loader"></div>
+</div>
+<!--=======================================-->
+  
+  
+  
+  
+<div id="normal-content-container">
+<!------------------------------------------->
+<!--            NAVBAR SECTION             -->
+<!------------------------------------------->
+<!-- navigation bar -->
+<nav id="navbar">
+  <!--this is nav left side contains logo-->
+  <div id="nav-left">
+     <!-- fab icon -->
+     <img src="../assets/threeLines.png" id="three-line-icon"/>
+     <!-- youtube logo -->
+     <img src="../assets/logo.png"/>
+  </div>
+ 
+ 
+  <!--nav middle, contains search bar for pc-->
+  <div id="nav-middle">
+    <div class="wrapper">
+       <div id="pc-search-box">
+           <input type="text" placeholder="Search for a video">
+           <!-- Image box for search icon-->
+           <div class="image-box-for-search-icon">
+             <img src="../assets/search.png"/>
+           </div>
+       </div>
+     
+       <!-- mic image box -->
+       <div class="image-box-for-mic-icon">
+           <img src="../assets/mic.png"/>
+       </div>
+    </div><!-- wrapper -->
+  </div><!-- nav middle -->
+ 
+ 
+  <div id="nav-right">
+     <a href="html/search-page.html">
+       <img src="../assets/search.png" id="search"/>
+     </a>  
+     <img src="../assets/bell.png"/>
+     <img src="../assets/profile.png"/>
+  </div>
+</nav>
+<!--=======================================-->
+
+
+
+
+<div class="container-to-initialise-grid">
+  <!-- From box or video to comment box -->
+  <div class="grid-left">
+  
+
+
+<!--===================================-->
+<!-- video iframe section -->
+<!--===================================-->
+<div id="box-of-video">
+ <div id="iframe-container">
+  <iframe src="" allowFullScreen id="iframe">
+  </iframe>
+ </div><!--iframe-container-->
+ <!-------------------------------------->
+ <p id="title"> </p>
+ <p id="viewsAndUploadTime">
+   <span id="viewsSpan">30K</span>
+   <span id="uploadTimeSpan">1 years ago</span>
+ </p>
+</div><!--box-of-video-->
+
+
+
+
+<!--===================================-->
+<!--channel detail box-->
+<!--===================================-->
+<hr>
+<div id="channel-detail-box">
+  <!-- logo of channel -->
+  <img src="" id="image-tag-logo"/>
+  <!-- name of channel -->
+  <p id="channel-name-para"></p>
+  
+  <!-- suscribe button  -->
+  <div id="subscribe-box">
+    <span>
+     subscribe
+    </span>
+  </div>
+</div>
+<hr>
+
+
+
+<!--===================================-->
+<!--Like, Dislike, (buttons) section-->
+<!--===================================-->
+<div id="button-container">
+ <!--line, dislike button box-->
+ <div id="like-dislike-box" class="btn-box">
+   <img src="../assets/like-btn.png" id="like"/>
+   <span id="likeSpan">100k</span>
+   <hr>
+   <img src="../assets/like-btn.png" id="dislike"/>
+ </div>
+ <!------------------------------------>
+
+ <!--save button box-->
+ <div id="save-box" class="btn-box">
+   <img src="../assets/save.png"/>
+   <span>save</span>
+ </div>
+ <!------------------------------------>
+ 
+ <!--share button box-->
+ <div id="share-box" class="btn-box">
+   <img src="../assets/share.png"/>
+   <span>share</span>
+ </div>
+</div>
+
+
+
+<!--===================================-->
+<!--comment section container-->
+<!--===================================-->
+<div id="comment-container">
+ 
+ <!--this is a default showing comment box-->
+ <div id="comment-box">
+  <div class="commentNumber">Comments 11</div>
+  
+  <!--default comment with profile image-->
+  <div id="dummy-comment">
+   <img src="../assets/profile.png"></img>
+   <span> 
+    Hay bro subcribe this channel
+   </span>
+  </div>
+ </div><!--comment-box-->
+ 
+ 
+ <div class="pc-comment-box">
+  <div class="commentNumber">Comments 11</div>
+  
+  
+  <!-- Post comment -->
+  <div class="post-comment">
+    <img src="../assets/profile.png"/>
+    <input type="text" placeholder="Post your comment">
+  </div><!-- Post comment -->
+  
+  
+  <!-- here comment boxes will append -->
+  <div class="container-of-boxes-of-comment">
+    <!-- comments will be displayed here by javascript -->  
+  </div>
+ </div><!-- pc-comment-box -->
+</div><!--comment-container-->
+<hr id="hr-at-end-of-mobile-comment">
+</div><!-- grid-left -->
+
+
+
+<!--===================================-->
+<!--here suggested videos will display-->
+<!--===================================-->
+<div id="videos-container">
+  <!-- videos will be displayed here by javascript -->   
+</div><!-- videos-container -->
+</div><!-- container-to-initialise-grid -->
+</div><!-- normal-content-container -->
+
+
+
+<!--==================================-->
+<!-- this is comment section -->
+<!--==================================-->
+<div id="comment-ka-main-container">
+ 
+ <!--navbar for cut button-->
+ <div id="navbar-of-comment">
+  <span>Comments</span>
+  <button id="comment-cross-button">
+   <img src="../assets/cross.png" id="cut"/>
+  </button>
+ </div>
+ <!-------------------------------------->
+ 
+ 
+ <!-- here comment boxes will append -->
+ <div class="container-of-boxes-of-comment"></div>  
+</div><!-- comment-ka-main-container -->
+
+
+
+
+
+<!--it's 'conector-bet-search-and-video.js-->
+<!--this will help the set the data into local storage from video.html-->
+<script src="../js/conector-bet-search-and-video.js"></script>
+
+<!-- linking to history connector.js -->
+<script src="../js/connector-for-history.js"></script>
+
+<!-- manage mobile landscape.js -->
+<script src="../js/manage-mobile-landscape.js"></script>
+
+<!--linking to play.js-->
+<!--this will play the video in iframe-->
+<script src="../js/play.js"></script>
+
+<!-- Loader js file -->
+<script src="../js/loader.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+/*-------------------------------------------*/
+/*              Loader SECTION               */
+/*-------------------------------------------*/
+.loader-container{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #e5eff1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 15;
+}
+
+/* loader [div] */
+.loader-container .loader{
+  width: 50px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border: 4.2px solid #135ae9;  
+  border-right: 4.2px solid #e5eff1;
+  animation: loading 0.9s infinite linear;
+}
+
+/* Loader animation */
+@keyframes loading{
+  to{
+    transform: rotate(360deg);
+  }
+}

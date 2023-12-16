@@ -1,0 +1,52 @@
+/*-------------------------------------------*/
+/*              NAVBAR SECTION               */
+/*-------------------------------------------*/
+/* Left side of navbar */
+/* it contains youtube logo */
+#nav-left{
+  width: 60%;
+}
+
+/* Right side or navbar */
+/* it contains search icon for mobile */
+#nav-right{
+  width: 20%;
+  min-width: 85px;
+}
+/*==========================================*/
+
+
+
+
+/*-------------------------------------------*/
+/*           SCREEN FOR NO SONG              */
+/*-------------------------------------------*/
+.screen-for-no-song{
+  width: 100%;
+  height: 100%;
+  height: calc(100dvh - 52px);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  display: none;
+}
+.screen-for-no-song #wrapper{
+  width: 100%;
+  margin-bottom: 70px;
+}
+.screen-for-no-song #left-side{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.screen-for-no-song #left-side img{
+  width: 60%;
+  max-width: 200px;
+}
+.screen-for-no-song #right-side{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.2rem;
+}

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Page title</title>
+   <!-- Linking to loader css -->
+  <link rel="stylesheet" href="../css/loader.css">
+   <!-- Linking to navbar css -->
+   <link rel="stylesheet" href="../css/navbar.css">
+   <!-- Linking to utils css -->
+   <link rel="stylesheet" href="../css/utils.css">
+   <!-- Linking to its favourie song css -->
+   <link rel="stylesheet" href="../css/favourite-song.css">
+   <!-- Linking to Index css for many stylings -->
+   <link rel="stylesheet" href="../css/index.css">
+   <!-- Linking to search page -->
+   <link rel="stylesheet" href="../css/search-style.css">
+   <!-- Linking to music specific page css -->
+   <link rel="stylesheet" href="../css/music-specific-page.css">
+</head>
+<body>
+<!------------------------------------------->
+<!--            LOADER SECTION             -->
+<!------------------------------------------->
+<div class="loader-container">
+  <div class="loader"></div>
+</div>
+<!--=======================================-->
+
+
+
+
+<main id="main-container-of-page">
+ <!------------------------------------------->
+ <!--            NAVBAR SECTION             -->
+ <!------------------------------------------->
+ <!-- navigation bar -->
+ <nav id="navbar">
+   <!--this is nav left side contains logo-->
+   <div id="nav-left">
+      <span> Favourite songs </span>
+   </div>
+ 
+ 
+   <!--nav middle, contains search bar for pc-->
+   <div id="nav-middle">
+     <div class="wrapper">
+        <div id="pc-search-box">
+            <input type="text" placeholder="Search for a video">
+            <!-- Image box for search icon-->
+            <div class="image-box-for-search-icon">
+              <img src="../images/search.jpg"/>
+            </div>
+        </div>
+     
+        <!-- mic image box -->
+        <div class="image-box-for-mic-icon">
+            <img src="../assets/mic.png"/>
+        </div>
+     </div><!-- wrapper -->
+   </div><!-- nav middle -->
+ 
+ 
+   <div id="nav-right">
+        <img src="../images/search.jpg" id="search"/> 
+      <img src="../images/setting.png"/>
+   </div>
+ </nav>
+ <!--=======================================-->
+ 
+ 
+ 
+ 
+ <!------------------------------------------->
+ <!--            MUSICS SECTION             -->
+ <!------------------------------------------->
+ <div class="music-boxes-container">
+   <!-- Here musics will be displayed by Javascript -->
+ </div>
+ <!--=======================================-->
+
+ 
+
+
+ <!------------------------------------------->
+ <!--            MUSICS SECTION             -->
+ <!------------------------------------------->
+ <div class="music-player-small-modal">
+   <!-- play button -->
+  <img src="../images/play-btn.png" class="play-btn" />
+   <p class="modal-music-song-name">
+      Bachpan ka pyar hindi song
+   </p>
+   <img src="../images/c-pannel-next.png" class="next"/>
+ </div>
+</main>
+<!--=======================================-->
+
+
+
+
+<!--***************************************-->
+<!--       ANOTHER PAGE IS STARTING        -->
+<!--***************************************-->
+
+
+
+
+<div id="sp-music-ka-main-container">
+ <!------------------------------------------->
+ <!--       NAV BAR FOR BACK BUTTON         -->
+ <!------------------------------------------->
+ <nav id="sp-nav-for-back">
+   <div id="back-btn-container">
+       <img src="../images/back.png" id="back-btn"/>
+       <span id="its-para">
+         Playing
+       </span>
+   </div>
+ </nav>
+ <!--=======================================-->
+
+
+
+ 
+ <!------------------------------------------->
+ <!--        MUSIC POSTURE SECTION          -->
+ <!------------------------------------------->
+ <!-- It contains music name at the bottom -->
+ <div id="music-posture-container">
+    <div id="music-posture-ka-para-container">
+       <div id="left">
+           <span id="heading"> Music </span>
+           <p id="sp-song-name">
+            Bachpan ka pyar hindi song
+           </p>
+       </div>
+       <div id="right">
+           <img src="../images/heart.png" id="heartImage"></img>
+       </div>
+    </div>
+ </div>
+
+
+ <!------------------------------------------->
+ <!--       CONTROLL PANEL SECTION          -->
+ <!------------------------------------------->
+ <div id="sp-controll-panel-container">
+     <!-- seekbar container -->
+     <div id="seekbar-container">
+        <!-- progress duration -->
+        <span id="progress-duration">00:00</span>
+        <!-- this is seekbar -->
+        <input type="range" id="seekbar" value="0" min="0" max="100">
+        <!-- final duration -->
+        <span id="final-duration">00:00</span><!--final duration-->
+     </div>
+ 
+
+     <!-- button container like => play, pause etc -->
+     <div id="btn-container">
+       <!-- previous button -->
+       <img src="../images/c-pannel-next.png" id="previous" />
+       <!-- play button -->
+       <img src="../images/play-btn.png" class="play-btn" />
+       <!-- next button -->
+       <img src="../images/c-pannel-next.png" class="next" id="sp-sec-next-btn"/>
+     </div>
+ </div>
+</div><!--#sp music ka main container-->
+<!--=======================================-->
+
+
+
+
+<!------------------------------------------->
+<!--        ROTATE SCREEN SECTION          -->
+<!------------------------------------------->
+<!--<div class="rotate-screen-container">
+  <p>
+    PLEASE ROTATE YOUR SRCEEN FOR BETTER VIEWING EXPERIENCE
+    WE DO NOT SUPPORT LANDSCAPE MODE YET.
+  </p>
+</div>-->
+
+
+
+
+<!--***************************************-->
+<!--       ANOTHER PAGE IS STARTING        -->
+<!--***************************************-->
+
+
+
+
+<!------------------------------------------->
+<!--          SEARCH BAR SECTION           -->
+<!------------------------------------------->
+<div id="search-ka-main-container" class="hide">
+<div id="search-box">
+   <!--this is search input tag-->
+   <input type="text" id="myInput" placeholder="Search for names.." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+ 
+   <!-- this is search icon image tag -->
+   <img src="../images/search.jpg" id="search-btn"></img>
+</div><!-- search box -->
+<!--=======================================-->
+
+
+
+
+<!------------------------------------------->
+<!--       SUGGESTED SEARCH SECTION        -->
+<!------------------------------------------->
+<div id="suggested-search-container">
+  <div id="container-for-delete-all-history-btn">
+     <span>History</span>
+     <div id="delete-all-search-history-btn">
+      <img src="../images/delete.png" onclick="deleteAllSearchHistory()"/>
+     </div>
+  </div>
+ <!-- here search history will be displayed by Javascript -->
+</div>
+</div><!-- search-ka-main-container -->
+<!--=======================================-->
+
+
+
+
+<!------------------------------------------->
+<!--       THERE IS NO SONG, SCREEN        -->
+<!------------------------------------------->
+<div class="screen-for-no-song">
+  <div id="wrapper">
+   <div id="left-side">
+    <img src="../images/duck.png" alt=""></img>
+  </div>
+  <div id="right-side">
+    <span>
+      You dont have any favourite song
+    </span>
+  </div>
+  </div>
+</div>
+
+
+
+
+<!------------------------------------------->
+<!--           JAVASCRIPT SECTION          -->
+<!------------------------------------------->
+<!-- Linking to connector js -->
+<!-- it will help in getting favouriteSongsArray from index page -->
+<script src="../js/connector.js"></script>
+
+<!-- Linking to favoute song js -->
+<!-- it contains all logic -->
+<script src="../js/favourite.js"></script>
+
+<!-- Linking to loade js -->
+<script src="../js/loader.js"></script>
+
+<!-- Linking to search js -->
+<script src="../js/search.js"></script>
+</body>
+</html>

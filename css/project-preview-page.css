@@ -1,0 +1,201 @@
+/* giving a background to body */
+body{
+  background: lightblue;
+}
+/* container of all section */
+.container-of-all-section{
+ height: 100vh;
+ overflow-y: scroll;
+ width: 100vw;
+ overflow-x: hidden;
+}
+
+
+/*==============================================*/
+/*==== Section 1 => View btn and project icon ====*/
+/*==============================================*/
+.view-btn-and-project-icon-section{
+  width: 100vw;
+  display: grid;
+  grid-area: top-section;
+  height: auto;
+  max-width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  padding: 15px 2vw;
+  padding-top: 70px;
+}
+/* contains project logo and its name */
+#project-image-and-para-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  border-radius: 7px;
+  overflow: hidden;
+  border: 0px solid black;
+  flex-wrap: wrap;
+}
+/* Project image tag */
+#project-image{
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  margin: 1vh 0vw;
+  border-radius: 10px;
+}
+/* Name of project */
+#project-name{
+ display: inline-block;
+ width: 57%;
+ font-size: 1.4rem;
+ font-weight: bolder;
+ margin-left: 4vw;
+}
+/* container of view button */
+#view-button-container{
+  width: 100%;
+}
+/* View button to see project */
+#view-button-container a button{
+ display: inline-flex;
+ align-items: center;
+ justify-content: center;
+ font-size: 1.4rem;
+ width: 100%;
+ outline: none;
+ padding: 1.3vmin;
+ border-radius: 20px;
+ background: #0caa00;
+ border: 1px solid black;
+ margin: 2vh 0vw;
+}
+
+
+
+
+/*==============================================*/
+/*==== Section 2 => Image slider  ====*/
+/*==============================================*/
+.project-image-and-para-container{
+  width: 100vw;
+  box-sizing: border-box;
+  margin-top: 20px ;
+}
+/* slider container */
+.slider-container{
+ display: flex;
+ grid-template-rows: auto;
+ grid-template-columns: repeat(auto, a);
+ width: 100%;
+ box-sizing: border-box;
+ gap: 10px;
+ overflow-x: scroll;
+ scroll-snap-type: x proximity;
+ background: none;
+ padding: 0px 2vw;
+}
+/* box or images */
+.image-box{
+ min-width: 150px;
+ display: grid;
+ aspect-ratio: 0.6/1;
+ background: white;
+ justify-content: center;
+ align-items: center;
+ color: #fff;
+ font-size: 2rem;
+ border: 2px solid cadetblue;
+ scroll-snap-align: center;
+ border-radius: 10px;
+ overflow: hidden;
+}
+/* Images under image box */
+.image-box img{
+ width: 100%;
+ height: 100%;
+}
+
+
+
+
+/*==============================================*/
+/*==== Section 3 => About project section  ====*/
+/*==============================================*/
+.About-project-section{
+  margin-top: 40px;
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 0px 2vw;
+}
+/* main heading (About this project) */
+.About-project-section .main-heading{
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+/* paragraph about project */
+.paragraph-about-project{
+  margin-top: 15px;
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+  color: #2e2e2e;
+}
+
+
+
+
+
+/*==============================================*/
+/*==== MEDIA QUERY  ====*/
+/*==============================================*/
+@media(min-width: 600px){
+ #project-image-and-para-container{
+   flex-direction: row;
+   flex-wrap: nowrap;
+  }
+ 
+  #view-button-container{
+   width: 25%;
+   margin-left: 8%;
+  }
+ 
+  #view-button-container hr{
+   display: none;
+  }
+ 
+  #view-button-container{
+   display: inline-block;
+  }
+ 
+  #hr2{
+   display: block;
+  }
+}
+
+
+/*-------------------------------------------*/
+
+
+/* media query to controll slider image box height */
+@media(min-height: 1px) and (max-height: 400px){
+  .image-box{
+    height: 200px;
+  }
+}
+
+
+/*-------------------------------------------*/
+
+
+/* Giving max width & adjusting all sections */
+@media(min-width: 1800px){
+  section{
+    max-width: 1800px !important;
+    padding: 0;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

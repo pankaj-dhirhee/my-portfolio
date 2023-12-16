@@ -1,0 +1,92 @@
+img{
+ height: 96%;
+}
+
+
+
+/*========================================*/
+  /* permanent styling from 590px */
+/*========================================*/
+@media(min-width: 590px){
+ /* styling main-item-container */
+ /* aligning slider & detail in a row */
+ #main-item-container{
+ display: inline-flex;
+ justify-content: space-between;
+ flex-direction: row;
+ margin-top: 3vh;
+}
+
+ /* styling slider container */
+ /* hiding mobile slider */
+ .slider-container{
+  display: none;
+ }
+ 
+ /* styling main-slider-container */
+ /* showing px slider */
+ #main-slider-container{
+  display: inline-flex;
+ }
+ 
+ /* styling small img box container */
+ /* showin small img box container */
+ #small-img-box-container{
+  display: inline-block;
+ }
+ 
+ /* reducing margin & font-size of product 
+ name */
+ #product-name{
+  margin-top: 1%;
+  font-size: 1.8rem;
+ }
+ 
+ /* reducing margin of product price */
+ #product-price{
+  margin-top: -2%;
+ }
+ 
+ /* reducing margin of product detail heading */
+ #product-detail-heading-mobile{
+  margin-top: -5%;
+ }
+ 
+ /* increasing margin of product detail
+ pragraph */
+ #product-detail-paragraph{
+  margin-top: -6vh;
+ }
+ 
+ /* hiding option container */
+ /* that is only for mobile */
+ .option-container{
+  display: none;
+ }
+ 
+ /* showing size selector */
+ #size-selector{
+  display: block;
+  width: 35%;
+ }
+ 
+ /* giving a width to buy button container */
+ #buy-container{
+  width: 50%;
+ }
+ 
+ /* hiding services box */
+ #services-box{
+  display: none;
+ }
+ 
+ /* giving some margin to left section */
+ #left{
+ margin-right: 15px; 
+ }
+ 
+ /* displaying 4 rows in suggestion container */
+ #suggestion-container{
+  grid-template-columns: repeat(4, 1fr);
+ }
+}

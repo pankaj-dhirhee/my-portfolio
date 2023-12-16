@@ -1,0 +1,183 @@
+/*-------------------------------------------*/
+/*              OPTIONS SECTION              */
+/*-------------------------------------------*/
+/* options => 'music', 'playlist', 'favourite' */
+.options-container{
+  width: 100%;
+  display: flex;
+  overflow-y: auto;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.4vw;
+  margin-top: 5px;
+}
+/* all option boxes */
+.box-of-option{
+  font-size: 1.05rem;
+  padding: 10px 24px;
+  background: black;
+  border-radius: 26px;
+}
+/* anchor tag */
+.box-of-option a{
+  text-decoration: none;
+}
+/*==========================================*/
+
+
+
+
+/*-------------------------------------------*/
+/*           MUSIC BOXES SECTION             */
+/*-------------------------------------------*/
+/* styling music boxes container */
+.music-boxes-container{
+  width: 100vw;
+  padding: 0 2vw;
+  scroll-behavior: smooth;
+  margin-top: 13px;
+}
+/* box or music */
+.music-box{
+  display: grid;
+  grid-template-columns: 6fr 1fr;
+  width: 100%;
+  height: 60px;
+  margin-bottom: 2%;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+
+/*---- LEFT SIDE ----*/
+/* contains music cover image and music name */
+.left{
+  display: inline-flex;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+}
+/* cover images */
+.cover{
+  height: 80%;
+  display: inline-block;
+  margin: 0% 3% 0% 1%;
+}
+/* music name */
+.music-name{
+  font-size: 1.2rem;
+  display: inline-block;
+  max-width: calc(100% - 70px);
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+  overflow: hidden;
+}
+
+
+/*---- RIGHT SIDE ----*/
+.right{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  margin: 0;
+  padding: 0;
+}
+/* play button, contains play image */
+.right button{
+  height: 80%;
+  border: none;
+  display: inline-block;
+  background: none;
+  margin-right: 2%;
+}
+/* image inside play button */
+.play-img{
+  height: 85%;
+  border-radius: 100%;
+  display: inline-block;
+}
+/*==========================================*/
+
+
+
+
+/*-------------------------------------------*/
+/*     SMALL MUSIC PLAYER MODAL SECTION      */
+/*-------------------------------------------*/
+.music-player-small-modal{
+  width: 99vw;
+  position: fixed;
+  bottom: 0.5vmin;
+  height: 55px;
+  padding: 2vmin 2vmin;
+  background: black;
+  display: flex;
+  right: 0.5vw;
+  align-items: center;
+  border-radius: 8px;
+}
+/* play button */
+.music-player-small-modal .play-btn{
+  margin-right: 2vw;
+}
+/* music name paragraph */
+.modal-music-song-name{
+  width: 72%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+/* next button */
+.music-player-small-modal .next{
+  position: absolute;
+  right: 2%;
+  height: 50%;
+}
+/*==========================================*/
+
+
+
+
+/*-------------------------------------------*/
+/*           MEDIA QUERY SECTION             */
+/*-------------------------------------------*/
+/*-- Permanent style for mobile --*/
+@media(max-width: 400px){
+  /* giving fixed height to music boxes container */
+  .music-boxes-container{
+    padding-bottom: 55px;
+  }
+}
+
+
+
+/*-- Permanent style for little big mobile --*/
+@media(min-width: 401px) and (max-width: 500px){
+  /* giving fixed height to small music modal */
+  .music-player-small-modal{
+    height: 64px;
+  }
+
+  /* giving fixed paddint to music boxes container */
+  .music-boxes-container{
+    padding-bottom: 59px;
+  }
+}
+
+
+
+/*-- Permanent style for a big mobile --*/
+@media(min-width: 590px) and (max-width: 602px){
+  /* giving fixed height to small music modal */
+  .music-player-small-modal{
+    height: 75px;
+  }
+
+  /* giving fixed height to music boxes container */
+  .music-boxes-container{
+    padding-bottom: 80px;
+  }
+}

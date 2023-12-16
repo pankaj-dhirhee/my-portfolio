@@ -1,0 +1,342 @@
+body{
+ background: #d0d0d0;
+}
+
+/* styling video container */
+/* it contains video boxes */
+#videos-container{
+ width: 100%;
+ padding: 5px auto;
+ display: grid;
+ margin-bottom: 55px;
+ background-color: #d0d0d;
+}
+
+/* contains image-con, and bottom con */
+.video-box{
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ overflow: hidden;
+ margin-bottom: 20px;
+ overflow: hidden;
+}
+/* container of thumbnail image */
+.image-con{
+ width: 100%;
+ aspect-ratio: 1/0.6;
+ overflow: hidden;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ background: lavender;
+ position: relative;
+}
+/* thumbnail image tag */
+.image-con img{
+ width: 100%;
+ height: 134%;
+ background: #d0d0d;
+}
+/* video duration span */
+.videoDurationSpan{
+ position: absolute;
+ bottom: 6px;
+ right: 6px;
+ color: white;
+ background: black;
+ border-radius: 5px;
+ padding: 3px;
+ font-weight: 400;
+ font-size: 0.9rem;
+}
+/* ----- down section ----- */
+/* it contains mostly paras(span tag) */
+.bottom-con{
+ display: grid;
+ grid-template-columns: repeat(2, auto);
+ height: auto;
+ width: 100%;
+ box-sizing: border-box;
+ padding: 5px;
+}
+/* container or channel logo */
+.channel-image-con{
+ width: 50px;
+ height: 50px;
+ margin-right: 6px;
+ border-radius: 50%;
+ overflow: hidden;
+}
+.channel-image-con img{
+ width: 100%;
+ height: 100%;
+}
+/* it contains title & views-con etc  */
+.para-con{
+ display: flex;
+ flex-direction: column;
+}
+/* title of video */
+.title{
+ color: black;
+ font-size: 1.1rem;
+ font-weight: 420;
+ max-width: 100%;
+ display: -webkit-box;
+ -webkit-line-clamp: 2;
+ -webkit-box-orient: vertical;
+ overflow: hidden;
+ line-height: 1.4rem;
+}
+/* container contain views upload time span */
+.channel-name-views-con{
+ color: #363636;
+ font-size: 0.8rem;
+ font-weight: 400;
+}
+/* wrapper contains channel-name, views & upload time */
+.channel-name-views-con .wrapper{
+  width: 100%;
+  display: flex;
+}
+
+
+
+/*----media query section----*/
+/* media query for mobile portrate mode*/
+@media(max-width: 600px){
+ #videos-container{
+  grid-template-columns: 1fr;
+  box-sizing: border-box;
+  grid-gap: 6px;
+ }
+ /* container or channel logo */
+ .channel-image-con{
+  width: 36px;
+  height: 36px;
+ }
+}
+
+@media(min-width: 950px) and (max-width: 970px){
+  #videos-container{
+    width: 93vw;
+    float: right;
+    margin-top: 1vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+  }
+}
+
+/* media query for mobile landscape mode*/
+@media(min-width: 601px) and (max-width: 700px){
+ #videos-container{
+  grid-template-columns: 1fr 1fr;
+  padding: 3px;
+  box-sizing: border-box;
+  grid-gap: 6px;
+ }
+ /* container or channel logo */
+ .channel-image-con{
+  width: 36px;
+  height: 36px;
+ }
+ /* contains image-con, and bottom con */
+ .video-box{
+  background: #bdbdbd;
+  border-radius: 5px;
+  overflow: hidden;
+ }
+}
+
+@media(min-height: 900px){
+  #page-ka-main-container{
+    height: 100%;
+  }
+}
+
+/* media query for mobile landscape mode*/
+@media(min-width: 701px) and (max-width: 900px){
+ #videos-container{
+  grid-template-columns: 1fr 1fr;
+  padding: 3px;
+  box-sizing: border-box;
+  grid-gap: 6px;
+ }
+ /* container or channel logo */
+ .channel-image-con{
+  width: 36px;
+  height: 36px;
+ }
+ /* contains image-con, and bottom con */
+ .video-box{
+  background: #bdbdbd;
+  border-radius: 5px;
+  overflow: hidden;
+ }
+}
+/*-------------------------------------*/
+
+
+/* for tablet's portrate mode */
+@media(min-width: 800px) and (max-width: 999px){
+ #videos-container{
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 3px;
+  box-sizing: border-box;
+  grid-gap: 7px;
+ }
+ /* contains image-con, and bottom con */
+ .video-box{
+  background: #bdbdbd;
+  border-radius: 5px;
+  overflow: hidden;
+ }
+}
+
+
+/* for tablet's portrate mode */
+@media(min-width: 1000px) and (max-width: 1100px){
+ #videos-container{
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 3px;
+  box-sizing: border-box;
+  grid-gap: 7px;
+ }
+ /* contains image-con, and bottom con */
+ .video-box{
+  background: #bdbdbd;
+  border-radius: 5px;
+  overflow: hidden;
+ }
+}
+
+
+@media(min-width: 1101px) and (max-width: 1300px){
+  #videos-container{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 3px;
+    box-sizing: border-box;
+    grid-gap: 7px;
+  }
+  /* contains image-con, and bottom con */
+ .video-box{
+  background: #bdbdbd;
+  border-radius: 5px;
+  overflow: hidden;
+ }
+}
+
+
+@media(min-width: 1301px) and (max-width: 1600px){
+  #videos-container{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 3px;
+    box-sizing: border-box;
+    grid-gap: 7px;
+  }
+  /* contains image-con, and bottom con */
+ .video-box{
+  background: #bdbdbd;
+  border-radius: 5px;
+  overflow: hidden;
+ }
+}
+
+
+@media(min-width: 1601px){
+  #videos-container{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 3px;
+    box-sizing: border-box;
+    grid-gap: 7px;
+  }
+  /* contains image-con, and bottom con */
+ .video-box{
+  background: #bdbdbd;
+  border-radius: 5px;
+  overflow: hidden;
+ }
+}
+
+
+/* adjusting videos container width for slider */
+@media(min-width: 1000px){
+  /* it contains video boxes */
+  #videos-container{
+    width: 93%;
+    float: right;
+    margin-right: 0.5vw;
+    margin-top: 1vmin;
+    grid-column-gap: 1.5vmin;
+    grid-row-gap: 1.5vmin;
+  }
+  /* contains image-con, and bottom con */
+  .video-box{
+    margin: 0;
+  }
+}
+
+/* adjusting videos container width for slider */
+@media(min-height: 1000px){
+  /* it contains video boxes */
+  #videos-container{
+    width: 93%;
+    float: right;
+    margin-right: 0.5vw;
+    margin-top: 1vmin;
+    grid-column-gap: 1.5vmin;
+    grid-row-gap: 1.5vmin;
+  }
+  /* contains image-con, and bottom con */
+  .video-box{
+    margin: 0;
+  }
+}
+
+
+/* adjusting videos container width for slider */
+@media(max-height: 500px){
+  /* it contains video boxes */
+  #videos-container{
+    width: 93%;
+    float: right;
+    margin-right: 0.5vw;
+    margin-top: 1vmin;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    margin-bottom: 0% !important;
+  }
+  /* contains image-con, and bottom con */
+  .video-box{
+    margin: 0;
+  }
+  #page-ka-main-container{
+    height: 100%;
+    overflow-y: auto;
+  }
+}
+
+
+@media(min-width: 1440px){
+  #videos-container{
+    width: 85%;
+    float: right;
+    margin-right: 0.5vw;
+    margin-top: 1vmin;
+    grid-column-gap: 1vw;
+    grid-row-gap: 1vw;
+    margin-bottom: 0% !important;
+  }
+}
+
+
+/* increasing width of videos container */
+@media(min-width: 2000px){
+  #videos-container{
+    margin-right: 2vw;
+    margin-left: 2vw;
+    width: 94vw important;
+  }
+}

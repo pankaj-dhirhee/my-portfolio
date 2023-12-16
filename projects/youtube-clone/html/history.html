@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page title</title>
+  <!-- Linking to loader css -->
+  <link rel="stylesheet" href="../css/multi-css/loader.css">
+  <!--linking to all navbar.css-->
+  <link rel="stylesheet" href="../css/multi-css/all-nav.css"> 
+  <!-- linking to all video section -->
+  <link rel="stylesheet" href="../css/multi-css/all-vid-sec.css"> 
+  <!-- linking to history.css -->
+  <link rel="stylesheet" href="../css/multi-css/history.css">
+</head>
+<body>  
+<!------------------------------------------->
+<!--            LOADER SECTION             -->
+<!------------------------------------------->
+<div class="loader-container">
+  <div class="loader"></div>
+</div>
+<!--=======================================-->
+  
+  
+ 
+<!------------------------------------------->
+<!--            NAVBAR SECTION             -->
+<!------------------------------------------->
+<nav>
+   <!--this is nav left side contains logo-->
+   <div id="nav-left">
+     <span>YOUR HISTORY</span>
+   </div>
+   
+ 
+   <!--nav middle, contains search bar for pc-->
+   <div id="nav-middle">
+     <div class="wrapper">
+         <div id="pc-search-box">
+            <input type="text" placeholder="Search for a video">
+            <!-- Image box for search icon-->
+            <div class="image-box-for-search-icon">
+              <img src="../assets/search.png"/>
+            </div>
+         </div>
+     
+         <!-- mic image box -->
+         <div class="image-box-for-mic-icon">
+           <img src="../assets/mic.png"/>
+         </div>
+     </div><!-- wrapper -->
+   </div><!-- nav middle -->
+  
+ 
+   <div id="nav-right">
+      <a href="../html/search-page.html">
+        <img src="../assets/search.png" id="search"/>
+     </a>  
+     <img src="../assets/bell.png"/>
+     <img src="../assets/3dot.png" id="nav-dot">
+   </div>
+</nav>
+<!--=======================================-->
+
+
+
+
+<!------------------------------------------->
+<!--            VIDEOS SECTION             -->
+<!------------------------------------------->
+<div id="videos-container">
+  <!-- Video will display mere by Javascript -->
+</div>
+<!--=======================================-->
+
+
+
+
+<!------------------------------------------->
+<!--          DELETE VIDEO BUTTONS         -->
+<!------------------------------------------->
+<!-- Delete sppecific video from history btn -->
+<div class="delete-main-con" id="delete-box-for-three-dot">
+   <button class="delete-btn">
+     <img src="../assets/delete.png"/>
+     Delete from history
+   </button>
+</div>
+
+
+<!-- Delete all video from history btn -->
+<div class="delete-main-con" id="delete-box-to-delete-all-history">
+   <button class="delete-all-history-btn delete-btn">
+     <img src="../assets/delete.png"/>
+     Delete all history
+   </button>
+</div>
+<!--=======================================-->
+
+
+
+
+<!------------------------------------------->
+<!--           LINKING SCRIPTS             -->
+<!------------------------------------------->
+<!-- connector -->
+<script src="../js/connector-for-history.js"></script>
+<!-- it will render watched videos -->
+<script src="../js/history.js"></script>
+<!-- Loader js file -->
+<script src="../js/loader.js"></script>
+</body>
+</html>

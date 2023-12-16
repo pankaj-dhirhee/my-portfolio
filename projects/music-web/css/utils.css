@@ -1,0 +1,46 @@
+.hide{
+  display: none !important;
+}
+
+
+
+/*-------------------------------------------*/
+/*              NOTIFICATION SEC             */
+/*-------------------------------------------*/
+.notification-box{
+  background: #448136;
+  border-radius: 30px;
+  height: 40px;
+  width: 200px;
+  position: sticky;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: calc(100vw - 50vw - 100px);
+  z-index: 300;
+  display: none;
+}
+.notification-para{
+  font-size: 1rem;
+  font-size: 1.1rem;
+}
+.show-notification{
+  animation-name: show-notification;
+  animation-duration: 1s;
+  display: flex !important;
+}
+@keyframes show-notification {
+  0%{
+    bottom: 15vh;
+  }
+  97%{
+    bottom: 15vh;
+  }
+  98%{
+    bottom: -10vh;
+  }
+  100%{
+    display: none;
+  }
+}

@@ -1,0 +1,490 @@
+/* reseting margin and padding */
+*{
+ margin: 0;
+ padding: 0;
+}
+
+/* giving a backgrouns color to body */
+body{
+ background: #e2e2e2;
+ width: 100vw;
+}
+
+/* styling main content container */
+/* purpose - to make item center */
+#main-content-container{
+ display: grid;
+ justify-content: center;
+ width: 100vw;
+}
+
+/* styling #main-item-container */
+/* it contains all content */
+#main-item-container{
+ display: inline-flex;
+ flex-direction: column;
+ margin-top: 2vh;
+}
+
+
+
+/*========================================*/
+  /* styling left section */
+/*========================================*/
+/* it contains both mobile & pc slider */
+#left{
+ 
+}
+
+/* styling and hiding this pc slider */
+/* styling main slider container */
+/* this is pc slider container  */
+#main-slider-container{
+ display: inline-grid;
+ grid-template-columns: repeat(2, auto);
+ /*border: 2px solid black;*/
+ display: none;
+}
+
+/* styling and hiding this pc slider */
+/* styling small-img-box-container */
+/* this conyains small images boxes */
+#small-img-box-container{
+ background: #e2e2e2;
+ display: grid;
+ grid-auto-columns: repeat(1, auto);
+ display: none;
+}
+
+/* styling small-img-box */
+/* it contains small images */
+.small-img-box{
+ display: inline-flex;
+ justify-content: center;
+ align-items: center; 
+ width: 40px;
+ height: 60px;
+ border: 1px solid black;
+ border-radius: 4px;
+ margin: 3px 3px;
+ background: white;
+}
+
+/* styling small images of small-img-box */
+.small-img-box img{
+ height: 90%;
+}
+
+/* styling big image box container */
+/* it contains one big image box */
+#big-img-box-container{
+ background: #e2e2e2; 
+ display: grid;
+ grid-auto-columns: repeat(1, auto);
+}
+
+/* styling big-img-box */
+/*under this big img will be inserted by js*/
+.big-img-box{
+ display: inline-flex;
+ align-items: center;
+ justify-content: center;
+ width: 270px;
+ height: 270px;
+ border: 1px solid black;
+ border-radius: 4px;
+ margin: 3px 3px;
+ background: white;
+}
+
+/* styling big image tag */
+#big-img{
+ height: 95%;
+}
+
+/*======================================*/
+ /*this is mobile slider section*/
+/*======================================*/
+/* styling slider container */
+/* it contains image boxes */
+.slider-container{
+ display: flex;
+ width: 99vw;
+ overflow-x: scroll;
+ scroll-snap-type: x proximity;
+ background: #e1e1e1;
+}
+/* styling image box */
+/* it contains images */
+.image-box{
+ min-width: 99vw;
+ aspect-ratio: 1 / 1.1;
+ background: #e3e3e3;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ color: #fff;
+ font-size: 2rem;
+ margin: 0vh 0.5vw;
+ border: 0.6px solid black;
+ scroll-snap-align: center;
+ background: white;
+}
+
+
+/*========================================*/
+  /* styling right section */
+/*========================================*/
+/*it contais various details about product*/
+#right{
+ display: inline-flex;
+ align-items: center;
+ padding: 3% 2%; 
+ padding-top: 0%;
+}
+
+/* styling product name */
+#product-name{
+ display: inline-block;
+ font-size: 2rem;
+ font-weight: bolder;
+ margin-bottom: 3%;
+ margin-top: 4%;
+}
+
+/* styling product-price */
+#product-price{
+ display: block;
+ color: #101010;
+ margin-bottom: 10%;
+}
+
+/*styling heading of product detail for mobile*/
+/* this will only visible for mobile */
+/* this will ne hidden fir pc */
+#product-detail-heading-mobile{
+ margin-top: 2%;
+}
+
+/* styling paragraph of product detail for 
+mobile */
+/* this will only visible for mobile */
+/* this will ne hidden fir pc */
+#product-detail-paragraph-mobile{
+ margin-top: 1%;
+ font-size: 1.05rem;
+ font-weight: 450;
+ color: #1e1e1e;
+}
+
+
+/*========================================*/
+  /* styling options for mobile */
+/*========================================*/
+/* styling option container */
+.option-container{
+ display: grid;
+ margin-top: 6vh;
+ margin-bottom: 3vh;
+ background: #f0f0f0;
+ border-radius: 8px;
+ padding: 1vh 1.7vw;
+}
+/* styling option container heading*/
+.option-container h{
+ font-size: 1.4rem;
+ font-weight: bold;
+ margin-top: 2vh;
+}
+/* styling option box */
+.option-box{
+ display: inline-flex;
+ align-items: center;
+ height: auto;
+ border: 1px solid black;
+ background: #f1f1f1;
+ margin-bottom: 2vh;
+ padding: 0vh 1vw;
+ border-radius: 8px;
+ margin-top: 2vh;
+}
+/* styling option details */
+.option-details{
+ font-size: 1.2rem;
+ color: #343434;
+ width: 75%;
+}
+/* styling selector box */
+.selector-box{
+ width: 24.5%;
+ padding: 0.5vh 0px;
+}
+/* styling selector */
+.selector{
+ font-size: 1.2rem;
+ width: 100%;
+ height: 100%;
+ border-radius: 6px;
+}
+
+
+/* styling and hiding size slelector */
+#size-selector{
+ width: 30%;
+ font-size: 1.1rem;
+ border: 1px solid black;
+ border-radius: 6px;
+ margin-top: 2.5%;
+ padding-left: 2%;
+ display: none;
+}
+
+
+/* styling buy-container */
+#buy-container{
+ margin-top: 3.5%;
+ margin-bottom: 4.5vh;
+}
+
+/* this is buy button */
+#buy-container button{
+ display: inline-flex;
+ width: 100%;
+ justify-content: center;
+ border: 1px solid black;
+ background: #3da9b8;
+ border-radius: 15px;
+ outline: none;
+ padding: 2% 4%;
+ font-size: 1.1rem;
+ margin-top: 3%;
+}
+
+
+/*========================================*/
+  /* styling services only for mobile */
+/*========================================*/
+/* styling services box */
+#services-box{
+    display: inline-block;
+    width: 48.2%;
+    background: #cbcbcb;
+    margin: 0.5%;
+    text-align: center;
+    font-weight: bold;
+}
+/* styling services background image */
+#background-image-sec2-one{
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+}
+#background-image-sec2-two{
+    width: 88%;
+    height: 100%;
+    overflow: hidden;
+}
+#background-image-sec2-three{
+    width: 78.5%;
+    height: 100%;
+    overflow: hidden;
+}
+#background-image-sec2-four{
+    width: 77%;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+/* styling and hiding this */
+/* heading of product detail for pc*/
+#product-detail-heading{
+ margin-top: 3.5%;
+ display: none;
+}
+
+/* styling and hiding this */
+/* styling paragraph of product detail for 
+pc */
+#product-detail-paragraph{
+ margin-top: 1%;
+ font-size: 1.05rem;
+ font-weight: 450;
+ color: #1e1e1e;
+ display: none;
+}
+
+
+
+/*========================================*/
+  /* styling suggestion section */
+/*========================================*/
+/* styling suggestion heading */
+#suggestion-heading{
+ display: block;
+ font-size: 1.4rem;
+ font-weight: bolder;
+ margin-top: 4vh;
+ margin-bottom: 3vh;
+ margin-left: 1.5vw;
+ margin-right: 1.5vw;
+}
+
+/* linitializing grid to a suggestion container*/
+#suggestion-container{
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+ width: 99vw;
+ height: auto;
+ background: #f5f5f5;
+ margin: 1vh 0.5vw;
+}
+
+/*styling all anchor tags*/
+#items-container a{
+ text-decoration: none;
+}
+.box-main-container{
+ display: inline-block;
+ border: 0.5px solid black;
+ aspect-ratio: 1/1.7;
+ margin: 0.5vw 0.5vw;
+ overflow: hidden;
+ border-radius: 2px;
+}
+/*styling category box container*/
+.box-container{
+ display: inline-block;
+ width: 100%;
+ height: 100%;
+ aspect-ratio: 1/1.50;
+ overflow: hidden;
+ background: #dbdbdb;
+}
+/* styling anchor of box container */
+.box-container .acontainer{
+ width: 70%;
+}
+/*styling box image container*/
+.image-container{
+ display: inline-flex;
+ align-items: center;
+ justify-content: center;
+ width: 99.5%;
+ height: 80%;
+ background: white;
+ overflow: hidden;
+}
+
+
+
+
+/* styling main-para-container */
+.main-para-container{
+ display: inline-flex;
+ flex-direction: row;
+ height: 100%;
+ width: 71%;
+ max-width: 71%;
+}
+/*styling paragraph container*/
+.para-container{
+ height: 100%;
+ display: inline-flex;
+ flex-direction: column;
+ width: 100%;
+ border: 0.5 px solid pink;
+ background: #dbdbdb;
+}
+/*styling users choice para*/
+.users-choice{
+ display: inline-block;
+ font-size: 0.95rem;
+ color: #181818;
+ padding: 0% 2%;
+ margin-bottom: 1%;
+ margin-top: 1%;
+}
+/*styling product para*/
+.product-para{
+ display: inline-block;
+ font-size: 1rem;
+ font-weight: bold;
+ padding: 0% 2%;
+ color: black;
+}
+/* styling cart container */
+.cart-container{
+ display: inline-block;
+ width: 27%;
+ padding-top: 4%;
+ float: right; 
+ margin-right: 1%;
+}
+/* styling cart button */
+.cart-button{
+ display: inline-block;
+ background: #dbdbdb;
+ border: none;
+ outline: none;
+ width: 100%;
+ height: auto;
+ margin: 0px;
+ background: #dbdbdb;
+ z-index: 3;
+}
+/* styling cart image */
+.cart{
+ display: inline-block;
+ width: 100%;
+ height: auto;
+}
+
+
+
+
+/* box will appear when any items are added to cart section */
+/* stylimg its container in go position */
+.appear-cart-container{
+ position: fixed;
+ width: 95vw;
+ padding: 0.5vh 0px;
+ border-radius: 10px;
+ display: block;
+ bottom: -18vh;
+ text-align: center;
+ font-weight: bolder;
+ font-size: 1.4rem;
+ background: #4a4a4a;
+ color: #d8d8d8;
+ margin: 0px 2.5vw;
+ display: none;
+}
+
+/* stylimg its container in come position */
+.came{
+ display: block;
+ animation-name: notification;
+ animation-duration: 2s;
+}
+
+/* making animation */
+@keyframes notification {
+ 3%{
+  transform: translateY(-19.5vh);
+ }
+ 99%{
+  transform: translateY(-19.5vh);
+ }
+ 100%{
+  transform: translateY(10vh);
+ }
+}
+
+
+
+
+
+
+
+

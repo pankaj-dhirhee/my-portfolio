@@ -1,0 +1,211 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: whitesmoke !important;
+}
+body{
+  background: #222222;
+  height: -webkit-fill-available;
+}
+#main-container-of-page{
+  background: transparent;
+}
+
+
+
+
+/*-------------------------------------------*/
+/*              NAVBAR SECTION               */
+/*-------------------------------------------*/
+nav{
+  height: 6vh;
+  min-height: 47px;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  position: sticky;
+  top: 0px;
+  z-index: 9;
+  border-bottom: 1px solid black;
+  box-sizing: border-box;
+  padding: 0 2vw;
+}
+
+
+/*-- Left side of navbar --*/
+/* it contains youtube logo */
+#nav-left{
+  width: 33%;
+  height: 75%;
+  display: flex;
+  align-items: center;
+}
+/* styling spotify logo */
+#nav-left img{
+  height: 100%;
+  margin-right: 5px;
+}
+/* span contains text 'Spotify' */
+#nav-left span{
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+/* fab icon (three lines) */
+#nav-left #three-line-icon{
+  height: 65%;
+  margin-right: 2.5vmin;
+  display: none;
+}
+
+
+/*-- Middle side of navbar --*/
+/* it contains search bar for pc */
+#nav-middle{
+  width: 33%;
+  margin: 0px 1%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  margin-right: 3%;
+}
+/* wrapper or nav middle */
+#nav-middle .wrapper{
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+/* styling box of pc search */
+#pc-search-box{
+  height: 80%;
+  display: flex;
+  align-items: center;
+  border-radius: 7px;
+  position: relative;
+}
+/* styling search input, under pc search box */
+#pc-search-box input{
+  width: 30vw;
+  max-width: 500px;
+  height: 100%;
+  box-sizing: border-box;
+  font-size: 1.2rem;
+  padding: 1% 3%;
+  overflow: scroll;
+  border: none;
+  outline: none;
+  background: transparent;
+  border: 1px solid black;
+}
+/* Image box for search icon */
+.image-box-for-search-icon{
+  height: 100%;
+  aspect-ratio: 1/1;
+  box-sizing: border-box;
+  padding: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: 1px solid black;
+  border-left: none;
+}
+/* styling search image under pc search box */
+.image-box-for-search-icon img{
+  height: 70%;
+}
+/* Image box for mic icon */
+.image-box-for-mic-icon{
+  margin-left: 15px;
+  box-sizing: border-box;
+  height: 87%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  aspect-ratio: 1/1;
+}
+/* Mic icon */
+.image-box-for-mic-icon img{
+  height: 70%;
+}
+
+
+/*-- Right side or navbar */
+/* it contains search icon for mobile */
+#nav-right{
+  width: 45%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+/* anchor tag of search icon */
+#nav-right a{
+  height: 100%;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+}
+/* styling search icon img tag */
+#nav-right img:nth-child(1){
+  height: 70%;
+  box-sizing: border-box;
+}
+/* styling bell icon img tag */
+#nav-right img:nth-child(2){
+  height: 70%;
+}
+/* profile picture img tag */
+#nav-right img:nth-child(3){
+  height: 73%;
+}
+/*==========================================*/
+
+
+
+
+/*-------------------------------------------*/
+/*           MEDIA QUERY SECTION             */
+/*-------------------------------------------*/
+/*-- Permanent style for mobile --*/
+@media(max-width: 400px){
+  /* giving fixed height to navbar */
+  nav{
+    height: 52px;
+  }
+}
+
+
+
+/*-- Permanent style for little big mobile --*/
+@media(min-width: 401px) and (max-width: 500px){
+  /* giving fixed height to navbar */
+  nav{
+    height: 56px;
+  }
+}
+
+
+
+/*-- Permanent style for a big mobile --*/
+@media(min-width: 590px) and (max-width: 602px){
+  /* giving fixed height to navbar */
+  nav{
+    height: 70px;
+  }
+  /* giving margin right to spotify logo */
+  #nav-left img{
+    margin-right: 10px;
+  }
+  /* span contains text 'Spotify' */
+  #nav-left span{
+    font-size: 1.5rem;
+  }
+}

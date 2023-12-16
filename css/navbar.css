@@ -1,0 +1,185 @@
+*{
+ margin: 0;
+ padding: 0;
+}
+body{
+ width: 100vw;
+ height: 100vh;
+ overflow: hidden !important;
+}
+
+
+
+/*==== Section 1 => Navbar ====*/
+nav{
+ background: #54a1ca;
+ height: 55px;
+ width: 100vw;
+ box-sizing: border-box;
+ padding: 0px 5px;
+ flex-wrap: wrap;
+ position: absolute;
+ top: 0;
+ z-index: 5;
+}
+
+.container{
+ height: 80%;
+ width: 100%;
+ justify-content: space-between;
+ max-width: 2000px;
+}
+
+
+/*---- sec1-logo-container ----*/
+/* contains Logo Image */
+.sec1-logo-container{
+ height: 100%;
+}
+/* Logo Image */
+.sec1-logo-container img{
+ height: 100%;
+}
+/* Logo text [Pankaj] */
+.sec1-logo-container span{
+ font-weight: 550;
+ margin-right: 5px;
+ font-size: 2.3rem;
+ color: whitesmoke;
+}
+
+
+/*---- section 2 => Links ----*/
+/* contains Unordered List */
+.sec2-Links-container{
+ height: 100%;
+ display: none;
+}
+/* contains Anchors */
+.sec2-Links-container ul{
+ justify-content: space-between;
+}
+/* Anchor tags (Links) */
+.sec2-Links-container ul a{
+ text-decoration: none;
+ color: white;
+ font-size: 1rem;
+ margin: 0px 6px;
+}
+
+
+/*---- section 3 => Buttons ----*/
+/* contains Two Buttons */
+.sec3-Buttons-container{
+ height: 100%;
+}
+/* Common style to both the Buttons */
+.sec3-Buttons-container button{
+ outline: none;
+ height: 90%;
+ padding: 5px 8px;
+ font-size: 1rem;
+ border: 1px solid #dadada;
+}
+/* Common style to Images of both the Buttons */
+.sec3-Buttons-container button img{
+ height: 80%;
+}
+/* Button 1 = fab-icon-btn */
+.fab-icon-btn{
+ aspect-ratio: 1.25/1;
+ border-radius: 10%;
+ background: transparent;
+}
+/* Button 2 = contact us button */
+.contact-us-button{
+ background: whitesmoke;
+ border-radius: 140px;
+ padding: 0px 15px;
+ display: none;
+}
+/* Calling Image of Contact Button */
+.contact-us-button img{
+ aspect-ratio: 1/1;
+ border-radius: 50%;
+ overflow: hidden;
+ background: whitesmoke;
+ border: none;
+}
+#mobile-number{
+ font-size: 1rem;
+ color: black;
+ margin-right: 10px;
+ margin-left: 6px;
+}
+
+
+/*---- Section Dropdown Links ----*/
+.sec4-Dropdown-Links-container{
+ width: 100vw;
+ box-sizing: border-box;
+ padding: 8px 5px;
+ background: #54a1ca;
+ height: auto;
+ position: absolute;
+ border: 1px solid #b3b3b3;
+ z-index: 5;
+}
+/* hide class for [.sec4-Dropdown-Links-container] */
+.hide-dropdown-link{
+ display: none;
+}
+/* contains Anchors */
+.sec4-Dropdown-Links-container ul{
+ flex-direction: column;
+ align-items: flex-start;
+}
+/* Anchor tags (Links) */
+.sec4-Dropdown-Links-container ul a{
+ text-decoration: none;
+ color: white;
+ font-size: 1.1rem;
+ height: 1.2rem;
+ margin: 5px 6px;
+}
+/* ============================================ */
+
+
+
+
+
+/*==== Media Query ====*/
+/*---- Media Query 1 => Mobile Portrate Mode ----*/
+@media(max-width: 600px){
+ /* hiding [section 2 => Links] */
+ .sec2-Links-container{
+  display: none;
+ }
+}
+
+
+/*---- Media Query 2 => Tablet Portrate Mode ----*/
+@media(min-width: 992px){
+ /* Decreasing width of Container */
+ .container{
+  width: 90%;
+ }
+ /* increasing width [section 2 => Links] */
+ .sec2-Links-container{
+  width: 55%;
+  display: flex;
+ }
+ /* Unordered List of [section 2 => Links] */
+ .sec2-Links-container ul{
+  justify-content: space-between;
+  width: 100%;
+ }
+ /* Hiding Fab Icon Button */
+ .fab-icon-btn{
+  display: none;
+ }
+ /* shosing Contact Us Button */
+ .contact-us-button{
+  display: flex;
+ }
+}

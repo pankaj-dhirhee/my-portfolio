@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page title</title>
+  <!-- Linking to loader css -->
+  <link rel="stylesheet" href="css/multi-css/loader.css">
+  <!--linking to all navbar.css-->
+  <link rel="stylesheet" href="css/multi-css/all-nav.css">
+  <!-- linking all bottom nav css -->
+  <link rel="stylesheet" href="css/multi-css/all-bottom-nav.css">
+  <!--linking to all video section css-->
+  <link rel="stylesheet" href="css/multi-css/all-vid-sec.css">
+  <!-- linking to slidebar css -->
+  <link rel="stylesheet" href="css/multi-css/left-sidebar.css">
+</head>
+<body>
+<!------------------------------------------->
+<!--            LOADER SECTION             -->
+<!------------------------------------------->
+<div class="loader-container">
+  <div class="loader"></div>
+</div>
+<!--=======================================-->
+
+
+
+
+<!-- main container or page -->
+<div id="page-ka-main-container">
+<!------------------------------------------->
+<!--            NAVBAR SECTION             -->
+<!------------------------------------------->
+<!-- navigation bar -->
+<nav id="navbar">
+  <!--this is nav left side contains logo-->
+  <div id="nav-left">
+     <!-- fab icon -->
+     <img src="assets/threeLines.png" id="three-line-icon"/>
+     <!-- youtube logo -->
+     <img src="assets/logo.png"/>
+  </div>
+ 
+ 
+  <!--nav middle, contains search bar for pc-->
+  <div id="nav-middle">
+    <div class="wrapper">
+       <div id="pc-search-box">
+           <input type="text" placeholder="Search for a video">
+           <!-- Image box for search icon-->
+           <div class="image-box-for-search-icon">
+             <img src="assets/search.png"/>
+           </div>
+       </div>
+     
+       <!-- mic image box -->
+       <div class="image-box-for-mic-icon">
+           <img src="assets/mic.png"/>
+       </div>
+    </div><!-- wrapper -->
+  </div><!-- nav middle -->
+ 
+ 
+  <div id="nav-right">
+     <a href="html/search-page.html">
+       <img src="assets/search.png" id="search"/>
+     </a>  
+     <img src="assets/bell.png"/>
+     <img src="assets/profile.png"/>
+  </div>
+</nav>
+<!--=======================================-->
+
+
+
+
+<!------------------------------------------->
+<!--         LEFT SLIDER SECTION           -->
+<!------------------------------------------->
+<div class="slidebar-container">
+  <!-- Links container -->
+  <div class="shorcut-links-container">
+     <!-- links -->
+     <a href="">
+       <img src="assets/home.png"/>
+       <p>Home</p>
+     </a>
+     <a href="">
+       <img src="assets/explore.png"/>
+       <p>Explore</p>
+     </a>
+     <a href="">
+       <img src="assets/subscriprion.png"/>
+       <p>Subscription</p>
+     </a>
+     <a href="">
+       <img src="assets/library.png"/>
+       <p>Library</p>
+     </a>
+      <a href="">
+       <img src="assets/history.png"/>
+       <p>History</p>
+     </a>
+     <a href="">
+       <img src="assets/playlist.png"/>
+       <p>Playlist</p>
+     </a>
+     <a href="">
+       <img src="assets/messages.png"/>
+       <p>Message</p>
+     </a>
+     <a href="">
+       <img src="assets/cast.png"/>
+       <p>Cast</p>
+     </a>
+   
+     <!-- Show more links [button] -->
+     <div class="show-more">
+       <img src="assets/more.png"/>
+       <p>Show more</p>
+     </div>
+  </div><!-- shorcut-links-container -->
+  <hr>
+  
+  <!-------------------------------------------->
+  
+  <!-- Subscribed sec -->
+  <div class="subscribed-container">
+     <!-- boxes to display subscribed channels -->
+     <div class="subscribed-boxes">
+       <img src="assets/tom.png"/>
+       <p>Tom cannie</p>
+     </div>
+     <div class="subscribed-boxes">
+       <img src="assets/cameron.png"/>
+       <p>Shyam ben</p>
+     </div>
+     <div class="subscribed-boxes">
+       <img src="assets/Jack.png"/>
+       <p>Jack gearge</p>
+     </div>
+  </div><!-- subscribed-container -->
+</div><!-- slidebar-container -->
+<!--=======================================-->
+
+
+
+
+<!------------------------------------------->
+<!--        STICKY NAVBAR SECTION          -->
+<!------------------------------------------->
+<div class="sticky-nav-on-left">
+  <!-- icon box -->
+  <div class="box-of-icon">
+    <a href="">
+      <img src="assets/home.png"/>
+    </a>
+  </div>
+  <!-- icon box -->
+  <div class="box-of-icon">
+    <a href="">
+      <img src="assets/resently-watched.png"/>
+    </a>
+  </div>
+  <!-- icon box -->
+  <div class="box-of-icon">
+    <a href="">
+      <img src="assets/watch-later.png"/>
+    </a>
+  </div>
+  <!-- icon box -->
+  <div class="box-of-icon">
+    <a href="">
+      <img src="assets/developer.png"/>
+    </a>
+  </div>
+</div>
+<!--=======================================-->
+
+
+
+
+<!------------------------------------------->
+<!--            VIDEOS SECTION             -->
+<!------------------------------------------->
+ <div id="videos-container">
+   <!-- videos will be displayed here by javascript -->  
+ </div><!-- videos container -->
+</div><!--page ka main container-->
+<!--=======================================-->
+
+
+
+
+<!------------------------------------------->
+<!--        BOTTOM NAVBAR SECTION          -->
+<!------------------------------------------->
+<footer id="bottom-nav-container">
+   <!--home button-->
+   <button id="home-btn" class="btnBox">
+     <img src="assets/home.png"/>
+     <span>home</span>
+   </button>
+ 
+   <!--resently watched button-->
+   <a href="html/history.html">
+     <button id="home-btn" class="btnBox">
+       <img src="assets/resently-watched.png"/>
+       <span>watched</span>
+     </button>
+   </a>
+ 
+   <!--watch later button-->
+   <a href="">
+     <button id="home-btn" class="btnBox">
+       <img src="assets/watch-later.png"/>
+       <span>watch later</span>
+     </button>
+   </a>
+ 
+   <!--it's developer button-->
+   <a href="">
+     <button id="home-btn" class="btnBox">
+       <img src="assets/developer.png"/>
+       <span>developer</span>
+     </button>
+   </a>
+</footer><!-- bottom-nav-container -->
+<!--=======================================-->
+
+
+
+
+<!------------------------------------------->
+<!--          JAVASCRIPT SECTION           -->
+<!------------------------------------------->
+<!-- linking to history connector.js -->
+<script src="js/connector-for-history.js"></script>
+
+<!--linking to fetch-data.js-->
+<!--this will fetch the videos for ho me scteen-->
+<script src="js/fetch.js"></script>
+
+<!-- linking to navbar.js -->
+<!-- it will hide nav on scrolling up & unhide -->
+<script src="js/navbar.js"></script>
+
+<!-- style.js for some styles -->
+<script src="js/style.js"></script>
+
+<!-- linking to left slider js -->
+<script src="js/slidebar.js"></script>
+
+<!-- Loader js file -->
+<script src="js/loader.js"></script>
+</body>
+</html>

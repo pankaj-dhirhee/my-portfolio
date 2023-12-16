@@ -1,0 +1,201 @@
+/*---- Importing fonts ----*/
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&display=swap');
+
+/*increasing the height of page ka main con*/
+#page-ka-main-container{
+ height: 100%;
+}
+
+
+
+
+/*-------------------------------------------*/
+/*         PLAYLIST DETAIL SECTION           */
+/*-------------------------------------------*/
+/* contails playlist thumbnail & details */
+/* main container of top section */
+#top-sec-con{
+ background: linear-gradient(#aadfff, white, #9bcbe8);
+ box-sizing: border-box;
+ padding: 10px 10px;
+ border-bottom: 1px solid black;
+ margin-bottom: 10px;
+}
+/* thumbnail of playlist */
+#playlist-thumbnail-con{
+ width: 85%;
+ aspect-ratio: 1/0.6;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border: 1px solid black;
+ border-radius: 7px;
+ overflow: hidden;
+ position: relative;
+ margin: 0px auto 5px auto;
+}
+/* Image tag of thumbnail */
+#playlist-thumbnail-img{
+ width: 100%;
+ height: 134%;
+}
+/* title or playlist */
+#playlist-title{
+ font-size: 1.5rem;
+ font-weight: 600;
+ color: black;
+ line-height: 1.8rem;
+}
+/* contain channel-name, vid-count etc */
+#playlist-detail-con{
+ margin-top: 20px;
+ border-top: 1px solid whitesmoke;
+ border-bottom: 1px solid whitesmoke;
+}
+/* playlist's channel name */
+#playlist-channel-name{
+ font-size: 1.1rem;
+ font-weight: 450;
+}
+/* contains no-or-videos & upload-time */
+#a-row{
+ margin-top: 1px;
+ font-family: 'Bricolage Grotesque', sans-serif;
+ font-size: 0.9rem;
+ font-weight: 500;
+ color: #202020;
+}
+/* upload time */
+#playlist-upload-time{
+ margin-left: 10px;
+}
+/*==========================================*/
+
+
+
+
+
+/*-------------------------------------------*/
+/*           MEDIA QUERY SECTION             */
+/*-------------------------------------------*/
+/* For adjusting videos container width */
+@media(max-height: 500px){
+  /* contains video boxes */
+  #videos-container{
+    width: 98%;
+    margin-right: 1%;
+  }
+}
+
+
+
+/* For adjusting videos container width */
+@media(min-height: 900px){
+  /* container of suggested videos */
+  #videos-container{
+    width: 98%;
+    margin-right: 1%;
+  }
+}
+
+
+
+/* For dividing into two sections */
+@media(min-width: 1100px){
+  /* container from  playlist detail to video container */
+  .container-to-initialise-grid{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 4%%;
+    justify-content: space-between;
+  }
+  
+  /* playlist detail main container (top-sec )*/
+  #top-sec-con{
+    width: 40vw;
+    height: 95vh;
+    text-align: center;
+    position: fixed;
+    padding-top: 1%;
+  }
+  
+  /* title of playlist */
+  #playlist-title{
+    width: 85%;
+    display: inline-block;
+    text-align: left;
+  }
+  
+  /* it contains channel info */
+  #playlist-detail-con{
+    width: 85%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+  }
+  
+  /* thumbnail of playlist */
+  #playlist-thumbnail-con{
+    margin-bottom: 15px;
+  }
+  
+  /* container of suggested videos */
+  #videos-container{
+    width: 56vw;
+    display: inline-block;
+    height: 95vh;
+    overflow-y: auto !important;
+    box-sizing: border-box;
+    padding-top: 1%;
+    float: right;
+  }
+  
+  /* container of thumbnail image */
+  .image-con{
+    border-radius: 5px !important;
+    overflow: hidden;
+    max-width: 400px;
+  }
+  
+  /* container from iframe to suggested videos */
+  #normal-content-container{
+    overflow: hidden;
+  }
+  
+  /* box or videos */
+  .video-box{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    margin-bottom: 1vh;
+    grid-column-gap: 10px;
+    background: transparent;
+    max-width: 1400px;
+  }
+  
+  /* container of channel logo */
+  .channel-image-con{
+    display: none;
+  }
+  
+  /* it contains mostly paras(span tag) */
+  .bottom-con{
+    height: 100%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  
+  /* title of video */
+  .title{
+    -webkit-line-clamp: 3;
+    font-size: 2rem;
+    line-height: 2.6rem;
+  }
+  
+  /* channel-name, views, upload-time con */
+  .channel-name-views-con{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}

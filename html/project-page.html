@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Page title</title>
+ <!-- Linking to loader css -->
+ <link rel="stylesheet" href="../css/loader.css">
+ <!-- utils css -->
+ <link rel="stylesheet" href="../css/utils.css">
+ <!-- navbar css -->
+ <link rel="stylesheet" href="../css/navbar.css">
+ <!-- index css for Footer styles -->
+ <link rel="stylesheet" href="../css/index.css">
+ <!-- project page css -->
+ <link rel="stylesheet" href="../css/project-page.css">
+</head>
+<body>
+<!------------------------------------------->
+<!--            LOADER SECTION             -->
+<!------------------------------------------->
+<div class="loader-container">
+  <div class="loader"></div>
+</div>
+<!--=======================================-->
+
+
+<!--==== Navbar Section ====-->
+<nav class="utils-flex-box">
+  <div class="container utils-flex-box">
+     <!-- sub section 1 => Logo -->
+     <div class="sec1-logo-container utils-flex-box">
+        <span>Pankaj</span>
+     </div><!-- sec1-logo-container -->
+   
+     <!------------------------------------------>
+   
+     <!-- sub section 2 => Links -->
+     <div class="sec2-Links-container utils-flex-box">
+        <ul class="utils-flex-box">
+          <a href="">Home</a>
+          <a href="">About</a>
+          <a href="">Contact Us</a>
+          <a href="">Projects</a>
+        </ul>
+     </div><!-- sec2-Links-container -->
+   
+     <!------------------------------------------>
+   
+     <!-- sub section 3 => Buttons -->
+     <div class="sec3-Buttons-container utils-flex-box">
+        <!-- button 1 => Fab Icon Button -->
+        <button class="fab-icon-btn utils-flex-box">
+           <img src="../assets/three-line.png" alt="Three-Lines"/>
+        </button>
+    
+        <!-- button 2 => Contact Button -->
+        <button class="contact-us-button utils-flex-box">
+           <span id="mobile-number">+91123456789</span>
+           <img src="../assets/calling.png" alt="Three-Lines"/>
+        </button>
+     </div><!-- sec3-Buttons-container -->
+  </div><!-- container -->
+</nav>
+<!-- Dropdown Links For Navbar -->
+<div class="sec4-Dropdown-Links-container hide-dropdown-link">
+  <ul class="utils-flex-box">
+      <a href="">Home</a>
+      <a href="">About</a>
+      <a href="">Contact Us</a>
+      <a href="">Projects</a>
+  </ul>
+</div><!-- sec4-Dropdown-Links-container -->
+
+
+
+
+
+<main class="container-of-all-section">
+<!--===========================================-->
+<!--==== Section 1 => Project boxes container ====-->
+<!--===========================================-->
+<section class="my-projects-section">
+   <!-- heading -->
+   <h2 class="utils-heading-strating-of-sections">
+     All my projects
+   </h2>
+   
+   <!-- Project boxes container -->
+   <div class="project-boxes-container">
+      
+      <!-- Here Projects will display by Javascript -->
+      <!-- Javascript => 'render-projects.js' -->
+      
+   </div><!-- all-projects-box-container -->
+</section>
+<hr class="utils-hr-line-end-of-sections">
+
+
+
+
+
+<!--===========================================-->
+<!--==== Section 6 => Footer section ====-->
+<!--===========================================-->
+<section class="footer-section">
+   <!-- Footer -->
+   <footer>
+      <div class="footer-icons-container">
+        <!-- icon box 1 -->
+        <div class="icon-box icon-box1">
+          <!-- Phone icon -->
+          <img src="../assets/contact.png"/>
+          
+          <!-- Work like a textbox -->
+          <span class="main-text-span">
+             <span class="bolded-text">
+               +91123456789
+             </span>
+             <br>
+             <span class="para">
+               Mon-Fri 9am-6pm
+             </span>
+          </span>
+        </div><!-- icon-box -->
+        
+        <!---------------------------------------->
+        
+        <!-- icon box 2 -->
+        <div class="icon-box icon-box2">
+          <!-- E-mail icon -->
+          <img src="../assets/emain.png"/>
+          
+          <!-- Work like a textbox -->
+          <span class="main-text-span">
+             <span class="bolded-text">
+               dhirheepankaj@gmail.com
+             </span>
+             <br>
+             <span class="para">
+               Online support
+             </span>
+          </span>
+        </div><!-- icon-box -->
+        
+        <!---------------------------------------->
+        
+        <!-- icon box 3 -->
+        <div class="icon-box icon-box3">
+          <!-- Location icon -->
+          <img src="../assets/map.png"/>
+          
+          <!-- Work like a textbox -->
+          <span class="main-text-span">
+             <span class="bolded-text">
+               Chhattisgarh
+             </span>
+             <br>
+             <span class="para">
+               State name
+             </span>
+          </span>
+        </div><!-- icon-box -->
+      </div><!-- footer-icons-container -->
+  
+  
+      <!-- Connect in social media container -->
+      <div class="connect-us-in-social-media-container">
+         <!-- text box -->
+         <div class="text-box">
+           connect with us on social media
+         </div>
+   
+         <!-- social media image box/container -->
+         <div class="images-box">
+            <img src="../assets/facebook.png"/>
+            <img src="../assets/instagram.png"/>
+            <img src="../assets/git-hub.png"/>
+            <img src="../assets/twitter.png"/>
+            <img src="../assets/linkedin.png"/>
+         </div>
+      </div><!-- connect-us-in-social-media-container -->
+  
+  
+      <!-- Copyright box/container -->
+      <div class="copy-right-box">
+         <span>
+            © Copyright 2021 Pankaj portfolio. 
+            | Created by Pankaj Dhirhee
+         </span>
+      </div><!-- copy-right-box -->
+   </footer>
+</section><!-- section -->
+</main><!-- main container of all sections -->
+
+ 
+ 
+ 
+ 
+<!--==== Linking Scripts ====-->
+<!-- Dropdown Links For Navbar Js -->
+<script src="../js/drop-down-links-navbar.js"></script>
+<!-- Projects Array js file -->
+<script src="../js/projects-array.js"></script>
+<!-- Render The projects js file -->
+<script src="../js/render-projects.js"></script>
+<!-- Loader js file -->
+<script src="../js/loader.js"></script>
+</body>
+</html>

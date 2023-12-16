@@ -1,0 +1,14 @@
+/*styling all images in boxes*/
+.image-container img{
+ height: 97%;
+}
+/* these are not in use */
+#image2{
+ height: 95%;
+}
+#image3{
+ height: 96%;
+}
+#image4{
+ height: 95%;
+}

@@ -1,0 +1,145 @@
+/*-------------------------------------------*/
+/*           SEARCH BAR SECTION              */
+/*-------------------------------------------*/
+/* styling main container or search page */
+#search-ka-main-container{ 
+ width: 100vw;
+ background: #222222;
+ height: 100dvh;
+ display: flex;
+ overflow: hidden;
+ flex-wrap: wrap;
+ justify-content: center;
+}
+/* styling box or search */
+#search-box{
+ display: flex;
+ align-items: center;
+ width: 95%;
+ margin-left: 1%;
+ margin-right: 1%;
+ border: 2px solid #dbdbdb;
+ border-radius: 25px;
+ margin-top: 10px;
+ padding: 3px 2.6%;
+ height: 40px;
+ margin-bottom: 15px;
+ min-height: 40px;
+}
+/* styling input, means search bar */
+#myInput {
+ width: 95%;
+ font-size: 16px;
+ padding: 5px 4px;
+ border: none;
+ background: transparent;
+ outline: none;
+ border-radius: 5px;
+ font-size: 18px;
+ color: black;
+ height: 28px;
+ display: inline-block;
+}
+/* styling search button => (search image) */
+#search-btn{
+ display: inline-block;
+ height: 90%;
+}
+/*==========================================*/
+
+
+
+
+/*-------------------------------------------*/
+/*       SEARCH SUGGESTION SECTION           */
+/*-------------------------------------------*/
+/* container or search suggestion boxes */
+#suggested-search-container{
+ width: 97%;
+ overflow-y: auto;
+ height: 90%;
+ background: #1b1b1b;
+ margin-left: auto;
+ margin-right: auto;
+ border-radius: 10px;
+}
+
+/*-- delete all search history btn sec --*/
+#container-for-delete-all-history-btn{
+  height: 26px;
+  width: 96%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/* box of delete image */
+#delete-all-search-history-btn{
+  height: 90%;
+  aspect-ratio: 1/1;
+}
+/* delete image */
+#delete-all-search-history-btn img{
+  height: 100%;
+}
+
+/* search suggestion box */
+.suggestion-box{
+ display: grid;
+ grid-template-columns: auto auto;
+ justify-content: space-between;
+ align-items: center;
+ box-sizing: border-box;
+ width: 96.5%;
+ margin-left: auto;
+ margin-right: auto;
+ background: #dfdfdf;
+ margin-top: 10px;
+ margin-bottom: 6px;
+ font-size: 1.3rem;
+ border-radius: 5px;
+ color: black;
+ background: transparent;
+}
+/* span, that contains contains searched text */
+.suggest-search-span{
+  height: 100%;
+  width: 85%;
+  padding: 13px 0%;
+}
+/* styling arrow (up right arrow) image inside search box */
+.upRightArrowSpan{
+  display: flex;
+  align-items: center;
+  float: right;
+}
+/*==========================================*/
+
+
+
+
+/*-------------------------------------------*/
+/*           MEDIA QUERY SECTION             */
+/*-------------------------------------------*/
+@media(max-width: 900px){
+ /* styling input, means searchbar */
+ #search-box{
+  max-height: 45px;
+ }
+ 
+ /* styling image container */
+ .img-container{
+   height: 48px;
+   aspect-ratio: 1/1;
+ }
+ 
+ /* styling image container ka img */
+ .img-container img{
+  height: 95%;
+ }
+}

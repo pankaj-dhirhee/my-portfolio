@@ -1,0 +1,26 @@
+/*==============================================*/
+/*==== Section 1 => my-projects-section ====*/
+/*==============================================*/
+.my-projects-section{
+ padding-top: 75px;
+ text-align: center;
+}
+
+
+
+
+
+/*==============================================*/
+/*==== Media querys ====*/
+/*==============================================*/
+/* media query for mobile portrate mode */
+@media(min-width: 600px) and (max-width: 749px){
+  /*--- My projects section --*/
+  /* project boxes container */
+  .project-boxes-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2vw;
+    grid-row-gap: 2vw;
+  }
+}

@@ -1,0 +1,47 @@
+/* reseting all margin and padding */
+*{
+ margin: 0px;
+ padding: 0px;
+}
+
+
+/* styling main container */
+.main-container{
+ width: 100vw;
+ height: 100vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+/* styling slider container */
+.slider-container{
+ display: inline-flex;
+ width: 99vw;
+ height: 100vh;
+ overflow-x: scroll;
+ scroll-snap-type: x proximity;
+ background: #e1e1e1;
+}
+.image-box{
+ min-width: 99vw;
+ aspect-ratio: 1 / 1.1;
+ background: white;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ color: #fff;
+ font-size: 2rem;
+ margin: 0vh 0.5vw;
+ /*border: 0.6px solid black;*/
+ scroll-snap-align: center;
+ box-sizing: border-box;
+ padding: 5px;
+ overflow: hidden;
+}
+.image-box img{
+ height: 95vh;
+}
+
+
+

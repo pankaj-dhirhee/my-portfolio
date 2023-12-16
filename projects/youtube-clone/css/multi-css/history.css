@@ -1,0 +1,163 @@
+/* importing font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+/* changing background or body */
+body{
+ height: 100vh;
+ width: 100vw;
+ color: #e0e0e0;
+ overflow: scroll;
+ background: #d0d0d;
+}
+
+
+
+
+/*-------------------------------------------*/
+/*              NAVBAR SECTION               */
+/*-------------------------------------------*/
+/* it contains text 'your history' on nav */
+#nav-left span{
+ font-size: 1.45rem;
+ font-weight: bolder;
+ font-family: 'Roboto Slab', serif;
+ color: black;
+}
+/* increasing width of nav left sec */
+#nav-left{
+ width: 50%;
+}
+/* I dont know */
+#dot{
+ margin-right: 2%;
+}
+/*==========================================*/
+
+
+
+
+
+/*-------------------------------------------*/
+/*            VIDEO BOX SECTION              */
+/*-------------------------------------------*/
+/* here watched videos will append */
+.down-container{
+ display: grid;
+ grid-template-columns: 1fr auto;
+}
+/* it contains mostly paras(span tag) */
+.bottom-con{
+ grid-template-columns: repeat(3, auto);
+ position: relative;
+}
+/* it contains title & views-con etc  */
+.para-con{
+ width: 92%;
+}
+/* it is container of dot image in vid box*/
+.dot-con{
+ width: 20px;
+ height: 100%;
+ margin: 5px 5px;
+ float: right;
+ position: absolute;
+ right: 5px;
+}
+/* it id dot image tag */
+.dot-con img{
+ height: 30px;
+ width: auto;
+ background: transparent;
+}
+/*==========================================*/
+
+
+
+
+/*-------------------------------------------*/
+/*          DELETE BUTTON SECTION            */
+/*-------------------------------------------*/
+/* it is container or delete button */
+/* styling for both delete all & delete video */
+.delete-main-con{
+ position: fixed;
+ padding: 1%;
+ height: 50px;
+ border: 2px solid black;
+ background: #232323;
+ width: 90vw;
+ margin-left: 3.5vw;
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ bottom: -15%;
+ border-radius: 10px;
+ z-index: 9;
+ overflow: hidden;
+ display: none;
+}
+/* it is delete button */
+/*when clicked, video will removed from arr*/
+/*styling for both delete all & delete video button tag*/
+.delete-btn{
+ background: #1e1e1e;
+ outline: none;
+ border: none;
+ padding: 4% 7%;
+ font-size: 1.2rem;
+ color: whitesmoke;
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ width: 100%;
+ height: 98%;
+ border-radius: 10px;
+ overflow: hidden;
+}
+/* delete image of both */
+.delete-btn img{
+ height: 100%;
+ margin-left: 9px;
+ margin-right: 7px;
+ margin-bottom: 4px;
+}
+/*==========================================*/
+
+
+
+
+
+/*-------------------------------------------*/
+/*           MEDIA QUERY SECTION             */
+/*-------------------------------------------*/
+/* For adjusting videos container width */
+@media(max-height: 500px){
+  /* contains video boxes */
+  #videos-container{
+    width: 98%;
+    margin-right: 1%;
+  }
+}
+
+
+
+/* For adjusting videos container width */
+@media(min-width: 1000px){
+  /* it contains video boxes */
+  #videos-container{
+    width: 98%;
+    margin-right: 1%;
+  }
+}
+
+
+
+/* For adjusting videos container width */
+@media(min-height: 1000px){
+  /* it contains video boxes */
+  #videos-container{
+    width: 98%;
+    margin-right: 1%;
+  }
+}
+/*==========================================*/

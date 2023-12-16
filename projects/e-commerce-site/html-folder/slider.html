@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Page title</title>
+ <!-- linking to all navbar css -->
+<link rel="stylesheet" href="../multiple-usage-css/all-navbar.css">
+
+<!-- linking to all navbar media query css -->
+<link rel="stylesheet" href="../responsive-css/all-navbar-media-query.css">
+ 
+ <!--linking to all slider css-->
+ <link rel="stylesheet" href="../multiple-usage-css/all-sliders.css">
+ 
+ <!--linking to all slider reeponce css-->
+ <link rel="stylesheet" href="../responsive-css/all-slider-responce.css">
+ 
+<!--linking to its slider css-->
+ <link rel="stylesheet" href="../css-folder/slider-kids-shirt1.css">
+</head>
+<body>
+ 
+ <!--starting or navbar-->
+<div class="main-container">
+ <!-------------------------------------->
+ <!--nav-bar section-->
+<!-------------------------------------->
+ <div id="nav-container">
+  <!-- starting of left section -->
+  <div id="left-section">
+    <!-- this is pankaj's logo -->
+    <img src="../assets-folder/logo.png" id="logo">
+    
+    <!-- this is menu button -->
+    <p id="menu-button" class="jall menu">
+     menu
+    </p>
+    
+    <p>
+     Pankaj dhirhee's Portfolio
+    </p>
+  </div><!--left section-->
+  <!--==================================-->
+  <!-- starting of right section -->
+  <div id="right-section">
+   
+      <!-- these are links -->
+      <a href="../index.html">
+         <li> Home </li>
+      </a>
+      
+      <a href="../html-folder/cart.html">
+         <li> Cart  </li>
+      </a>
+      
+      <!--more button-->
+      <li id="more" class="menu"> 
+       more 
+      </li>
+      
+   
+   
+   <!--anchor tag to go to sp search page-->
+   <a href="../html-folder/search-bar.html" id="search-bar-anchor">
+     <!-- this is search bar -->
+     <input type="text" id="search-bar">
+   </a>
+  </div><!--#right-section-->
+ </div><!--#nav-container-->
+ 
+ 
+<!--main item content container-->
+<div id="main-item-container"> 
+ <!--====================================-->
+ <!--section left where slider is kept-->
+ <!--====================================-->
+ <section id="left">
+   <!--slider for pc-->
+   <main id="main-slider-container">
+    
+    <!--this is container of all small img-->
+    <div id="small-img-box-container">
+     <!--these are small images box-->
+     <!-- box-1 -->
+     <div class="small-img-box">
+       <img src="../assets-folder/shirt1.png" onclick="galaryFunction(this)">
+     </div>
+     <!-- box-2 -->
+     <div class="small-img-box">
+       <img src="../assets-folder/shirt-sp2.png" onclick="galaryFunction(this)">
+     </div>
+     <!-- box-3 -->
+     <div class="small-img-box">
+       <img src="../assets-folder/shirt-sp3.png" onclick="galaryFunction(this)">
+     </div>
+    </div><!--small-img-box-container-->
+    <!--===============================-->
+    
+    <!--this is container or big img box -->
+    <div id="big-img-box-container">
+     <!--this is box for big image -->
+     <div class="big-img-box">
+      <img src="../assets-folder/shirt1.png" id="big-img">
+     </div><!--big-img-box-->  
+     </div><!--big-img-box-container-->
+   </main><!--main-slider-container-->
+   
+  
+ <!--====================================-->
+ <!--slider for mobile-->
+ <!--====================================-->
+ <a href="../html-folder/sp-slider.html">
+  <!--slider container-->
+  <div class="slider-container"> </div>
+ </a><!--anchor tag for zoom page-->
+ </section><!--section left-->
+  
+  
+ <!--====================================-->
+ <!--section right where details are kept-->
+ <!--====================================-->
+ <section id="right">
+ <!--this is detail container-->
+ <div id="detail-container">
+   <!--this is product name-->
+   <h1 id="product-name">
+     mens home wear t-shirt
+   </h1>
+   
+   <!--this is price of product-->
+   <h2 id="product-price">
+     ₹200
+   </h2>
+   
+   <!--this a heading for product detail-->
+   <!--this will only visible for mobile-->
+   <!--this will ne hidden for pc-->
+   <h2 id="product-detail-heading-mobile">
+     Product details
+   </h2>
+   
+   <!--this is detail or product-->
+   <!--this will only visible for mobile-->
+   <!--this will ne hidden fir pc-->
+   <p id="product-detail-paragraph-mobile">
+     
+   </p>
+   
+   
+  <!--=================================-->
+  <!--option section only for mobile-->
+  <!--=================================-->
+  <!-- new section is starting -->
+  <div class="option-container">
+   <h>Select some options</h>
+ 
+   <!--option 1-->
+   <div class="option-box">
+    <!--option span or detail-->
+    <span class="option-details">
+       Select cloth size
+    </span>
+    <!--option selector-->
+    <span class="selector-box">
+    <!--selector-->
+    <select class="selector">
+      <option>Small</option>
+      <option>Medium</option>
+      <option>Large</option>
+    </select><!--selector-->
+    </span><!--selector box-->
+   </div><!--option box-->
+
+  <!--option 2-->
+ <div class="option-box">
+  <!--option span or detail-->
+  <span class="option-details">
+   Select quantity
+  </span>
+  <!--option selector box-->
+  <span class="selector-box">
+   <!--selector-->
+   <select class="selector">
+     <option>One</option>
+     <option>Two</option>
+     <option>Three</option>
+     <option>Four</option>
+     <option>Five</option>
+     <option>Six</option>
+     <option>Seven</option>
+     <option>Eight</option>
+     <option>Ten</option>   
+   </select><!--selector-->
+ </div><!--option box-->
+</div><!--option container-->
+   
+   
+   <!--size selector-->
+   <select id="size-selector">
+     <option>Small</option>
+     <option>Medium</option>
+     <option>Large</option>
+   </select>
+   
+   <!--this is buy button container-->
+   <div id="buy-container">
+    <!--anchor tag for buy link-->
+    <a href="../html-folder/form.html">
+    <!--this is buy button-->
+     <button>
+       Buy now
+     </button>
+     </a><!--anchor tag for buy link-->
+   </div>
+   
+   <!--this a heading for product detail-->
+   <h2 id="product-detail-heading">
+     Product details
+   </h2>
+   
+<!--=====================================-->
+  <!-- services box only for mobile -->
+<!--=====================================-->
+<div class="services-container">
+   <!-- box-1 -->
+   <div id="services-box">
+    <img src="../assets-folder/free delivery.png" id="background-image-sec2-one">
+    <p id="background-ka-para-of-services">
+       Free delivery
+    </p>
+   </div>
+   <!-- box-2 -->
+   <div id="services-box">
+    <img src="../assets-folder/free shipping.png" 
+    id="background-image-sec2-two">
+    <p id="background-ka-para-of-services">
+       Free shifting
+    </p>
+   </div>
+   <!-- box-3 -->
+   <div id="services-box">
+    <img src="../assets-folder/refund.png" 
+    id="background-image-sec2-three">
+    <p id="background-ka-para-of-services">
+       Refund policy
+    </p>
+   </div>
+   <!-- box-4 -->
+   <div id="services-box">
+    <img src="../assets-folder/custem duty.png" 
+    id="background-image-sec2-four">
+    <p id="background-ka-para-of-services">
+       No custom duty
+    </p>
+   </div>
+  </div>
+   
+   <!--this is detail or product-->
+   <p id="product-detail-paragraph">
+     This shirt is comfortable to wear for
+     kids.
+     You can wear this shirt in summer season 
+     without any problem. This shirt is of 
+     light colour.
+   </p>
+ </section><!--right section-->
+ </div><!--detail-container-->
+ 
+ 
+ <!--====================================-->
+<!--product suggestion section-->
+<!--====================================--> 
+<!-- product suggestion heading -->
+<h id="suggestion-heading">
+ Suggested products
+</h>
+
+<!--suggestion container-->
+<div id="suggestion-container">
+ 
+</div><!--suggestion container-->
+ </div><!--main item content contaimer-->
+  
+  
+  
+<!-- box will appear when add to cart ka container -->
+<div class="appear-cart-container">
+ 
+ <div class="appear-box">
+  your item is added to cart
+ </div><!--appear box-->
+
+</div><!--main container-->
+
+ 
+ 
+
+  
+  
+
+<!-------------------------------------->
+ <!-- fab icon section  -->
+<!-------------------------------------->
+<!--starting of fab container-->
+<div class="fab-container tab fab-container-go">
+ <!-- sub container -->
+ <div id="main-container-of-cross-image">
+ <div class="cross-image-container">
+  <button>
+  <img src="../assets-folder/cross.png">
+  </button>
+  <!-- ending or sub container -->
+  </div>
+ </div>
+ 
+ <!--fab links container-->
+ <div class="links-container">
+ <!-- link1 -->
+ <a href="../index.html" class="links">
+  <p>Go to home page </p>
+ </a>
+ <hr>
+ <!-- link2 -->
+ <a href="cart.html" class="links">
+  <p>Go to cart page</p>
+ </a>
+ <hr>
+ <!-- link3 -->
+ <a href="about-website-maker.html" class="links">
+  <p>About website maker</p>
+ </a>
+ <hr>
+ <hr>
+ 
+<!--end of link container-->
+</div>
+<!--end of fab container-->
+
+
+
+<!-------------------------------------->
+ <!-- fab icon section two  -->
+<!-------------------------------------->
+<!--starting of fab container-->
+<div class="fab-container1 fab-container-go">
+ <!-- sub container -->
+ <div id="main-container-of-cross-image">
+ <div class="cross-image-container">
+  <button>
+  <img src="../assets-folder/cross.png">
+  </button>
+  <!-- ending or sub container -->
+  </div>
+ </div>
+ 
+ <!--fab links container-->
+ <div class="links-container">
+ <!-- link1 -->
+ <a href="../index.html" class="links">
+  <p>Go to home page </p>
+ </a>
+ <hr>
+ <!-- link2 -->
+ <a href="cart.html" class="links">
+  <p>Go to cart page</p>
+ </a>
+ <hr>
+ <!-- link3 -->
+ <a href="about-website-maker.html" class="links">
+  <p>About website maker</p>
+ </a>
+ <hr>
+ 
+<!--end of link container-->
+</div>
+<!--end of fab container-->
+</div>
+
+
+
+
+
+
+
+
+
+<!-- linking to fab icon js -->
+ <script src="../js-folder/fab.js"></script>
+ 
+ <!-- linking to search js -->
+ <script src="../js-folder/search-bar.js"></script>
+ 
+ <!-- linking to image galary js -->
+<script src="../js-folder/image-galary.js"></script>
+
+<!-- linking to slider js -->
+<script src="../js-folder/slider.js"></script>
+</body>
+</html>

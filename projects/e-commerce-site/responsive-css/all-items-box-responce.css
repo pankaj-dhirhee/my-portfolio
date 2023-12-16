@@ -1,0 +1,24 @@
+/* media query */
+@media (min-width: 590px) and (max-width: 800px){
+ /*styling category container*/
+#items-container{
+ grid-template-columns: repeat(4, 1fr);
+}
+}
+
+
+/* media query two2*/
+@media (min-width: 801px) and (max-width: 1100px){
+ /*styling category container*/
+#items-container{
+ grid-template-columns: repeat(5, 1fr);
+ grid-gap: 1.5vw;
+}
+
+
+
+}
+
+#cart-container{
+ display: none;
+}

@@ -1,0 +1,390 @@
+/* changing background and color of body */
+body{
+ background: #d0d0d;
+ color: black;
+ width: 100vw;
+ overflow-y: hidden;
+}
+
+
+
+
+/*-------------------------------------------*/
+/*              NAVBAR SECTION               */
+/*-------------------------------------------*/
+/* setting z-index of navbar */
+nav{
+ z-index: 9;
+}
+/* adjusting width or nav left */
+#nav-left{
+ width: 75%;
+ display: flex;
+}
+/* channel name inside nav left */
+#channel-name-on-nav{
+ font-size: 1.1rem;
+ margin-left: 4px;
+ height: 1.3rem;
+ overflow: hidden;
+ width: 100%;
+ display: flex;
+ align-items: flex-start;
+}
+/* adjusting items aligning of nav right */
+#nav-right{
+ justify-content: flex-end;
+}
+/* bell icon */
+#nav-right img{
+ margin-left: 7vw;
+}
+/*==========================================*/
+
+
+
+
+/*-------------------------------------------*/
+/*              VIDEO SECTION                */
+/*-------------------------------------------*/
+/* giving margin to videos container */
+#videos-container{
+  margin-top: 20px;
+}
+/* thumbnail image container of video box */
+.image-con{
+ position: relative;
+}
+/* span that contaims playlist number */
+/* inside video box or playlist */
+.playlistNumCon{
+ position: absolute;
+ bottom: 0;
+ background: #ffcaaa;
+ height: 14%;
+ max-height: 28px;
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ border-top: 1px solid black;
+ border-top-right-radius: 4px;
+ overflow: hidden;
+  border-top-left-radius: 4px;
+}
+/*==========================================*/
+
+
+
+
+/*-------------------------------------------*/
+/*             OPTIONS SECTION               */
+/*-------------------------------------------*/
+/* contains option => videos, playlist */
+#options-container{
+ width: 100vw;
+ height: auto;
+ margin: 30px 0px 8px 0px;
+}
+/* box of option */
+.option-box{
+ font-size: 1.1rem;
+ color: #242424;
+ margin-right: 10vw;
+ padding: 8px;
+ box-sizing: border-box;
+}
+/* option 'videos' */
+#videos-option{
+ border-bottom: 2px solid black;
+ margin-left: 5px;
+}
+/*==========================================*/
+
+
+
+
+/*-------------------------------------------*/
+/*         CYANNEL DETAILS SECTION           */
+/*-------------------------------------------*/
+/* main con5ainerbot cuannel detail sec */
+#channel-detail-container{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+}
+/* container from wrapper left to subscribe btn */
+#channel-detail-container .wrapper{
+  width: 100%;
+}
+/* container from channel image to subscriber num box */
+.wrapper-left{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* styling channel image */
+#c-profile{
+ margin: 1% 0%;
+ height: 13vh;
+ min-height: 60px;
+ max-height: 140px;
+ aspect-ratio: 1/1;
+ background-color: #eaeaea;
+ border-radius: 50%;
+ margin-top: 3%;
+}
+/* banner or channel */
+#bannerImg{
+ width: 100vw;
+ height: auto;
+ border-radius: 0px;
+}
+/* contains subscribers, channel name */
+#box{
+ height: 100%;
+ display: flex;
+ flex-direction: roe;
+ justify-content: center;
+ align-items: center;
+ width: 100%;
+}
+/* styling subscribers & videos span */
+#subscribers{
+ opacity: 0.7;
+ margin-top: 1%;
+}
+/* styling channel name span */
+#cha-name{
+ font-size: 1.3rem;
+ font-weight: bold;
+}
+/* styling box2, contains subscribe & join con */
+#box-two{
+ width: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ margin-top: 4%;
+}
+/* subscribe button or box */
+#subscribe-btn{
+ height: 5vh;
+ min-height: 25px;
+ width: 80%;
+ background: gray;
+ border-radius: 30px;
+ display: flex;
+ align-items: center;
+ padding: 2% 4%;
+ background: #b02c2c;
+ font-size: 1.2rem;
+ color: black;
+ justify-content: center;
+ margin-bottom: 3%;
+}
+/* styling para(span) of subscribe btn */
+#subscribe-btn span{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ height: 100%;
+ width: 100%;
+}
+/* styling horizontal line */
+hr{
+ border: 1px solid #ebebeb;
+}
+/*==========================================*/
+
+
+
+
+
+/*-------------------------------------------*/
+/*          MEDIA QUERY SECTION              */
+/*-------------------------------------------*/
+/* For mobile landscape mode */
+@media(max-height: 500px){
+  /* main container of channel detail sectin */
+  #channel-detail-container{
+    width: 93%;
+    float: right;
+    overflow: hidden;
+  }
+  
+  /* options container => videos, playlist */
+  #options-container{
+    width: 93%;
+    display: inline-block;
+    float: right;
+    margin-bottom: 2vmin;
+  }
+  
+  /* container from channel image to subscriber */
+  .wrapper-left{
+    width: 75%;
+  }
+  
+  /* channel logo */
+  #c-profile{
+    margin-right: 16px;
+  }
+}
+
+
+
+/* From mobile lamdscape to desktop screen */
+@media(min-width: 600px){
+  /* channel detail container */
+  #channel-detail-container{
+    justify-content: center;
+    border-bottom: 1px solid black;
+  }
+  
+  /* channel image */
+  #c-profile{
+    grid-area: channel-img;
+    max-height: 75px;
+    margin-right: 1vmin;
+  }
+  
+  /* channel name */
+  #cha-name{
+    grid-area: channel-name;
+    margin-top: 6%;
+    width: 100%;
+  }
+  
+  /* contains subscriber and total videos number */
+  #box{
+    grid-area: sunscriber-box;
+    height: auto;
+    padding: 0px;
+    justify-content: flex-start;
+    margin-bottom: 6%;
+  }
+
+  /* container from wrapper left to subscribe btn */
+  #channel-detail-container .wrapper{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    margin-bottom: 1.5%;
+  }
+  
+  /* container from channel image to subscriber */
+  .wrapper-left{
+    display: grid;
+    grid-template-areas: 
+    'channel-img channel-name channel-name channel-name'
+    'channel-img sunscriber-box sunscriber-box sunscriber-box';
+    width: 60%;
+    align-items: center;
+  }
+}
+
+
+
+/* For adjusting height of subscribe button */
+@media(max-width: 1000px){
+  #subscribe-btn{
+    max-height: 28px;
+  }
+}
+
+
+
+/* For adjusting height of subscribe button */
+@media(min-width: 1001px) and (max-width: 2000px){
+  #subscribe-btn{
+    max-height: 35px;
+  }
+}
+
+
+
+/* For adjusting height of subscribe button and etc */
+@media(min-width: 2001px) and (max-width: 3000px){
+  /* subscribe button */
+  #subscribe-btn{
+    max-height: 35px !important;
+    max-width: 40%;
+  }
+  
+  /* channel image */
+  #c-profile{
+    min-height: 80px;
+  }
+  
+  /* channel name */
+  #cha-name{
+    width: 26vw !important;
+  }
+}
+
+
+
+/* For tablets */
+@media(min-height: 1000px){
+  /* channel detail container */
+  #channel-detail-container{
+    width: 93%;
+    float: right;
+    overflow: hidden;
+  }
+  
+  /* options container => videos, playlist */
+  #options-container{
+    width: 93%;
+    display: inline-block;
+    float: right;
+    margin-bottom: 2vmin;
+    margin-right: 2vw;
+    margin-left: 2vw;
+  }
+}
+
+
+
+/* For big mobile */
+@media(min-width: 950px){
+  /* channel detail container */
+  #channel-detail-container{
+    width: 93%;
+    float: right;
+    overflow: hidden;
+    margin-right: 2vw;
+    margin-left: 2vw;
+  }
+  
+  /* options container => videos, playlist */
+  #options-container{
+    width: 93%;
+    display: inline-block;
+    float: right;
+    margin-bottom: 2vmin;
+    margin-right: 2vw;
+    margin-left: 2vw;
+  }
+}
+
+
+
+/* For wide screen */
+@media(min-width: 1440px){
+  /* channel detail container */
+  #channel-detail-container{
+    width: 85%;
+    margin-right: 2vw;
+    margin-left: 2vw;
+  }
+  
+  /* options container => videos, playlist */
+  #options-container{
+    width: 85%;
+    margin-right: 2vw;
+    margin-left: 2vw;
+  }
+}

@@ -1,0 +1,42 @@
+/* reseting margin & padding */
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+/* main container or slider */
+.main-container-of-slider{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* container or image box */
+.image-boxes-container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x proximity;
+  background: #e1e1e1;
+}
+/* image box */
+.image-box{
+  min-width: 99%;
+  aspect-ratio: 1 / 1.1;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  scroll-snap-align: center;
+  box-sizing: border-box;
+  display: flex;
+  overflow: hidden;
+}
+/* images inside image box */
+.image-box img{
+  width: 95vmin;
+}

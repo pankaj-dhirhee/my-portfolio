@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page title</title>
+  <!-- Linking to loader css -->
+  <link rel="stylesheet" href="../css/multi-css/loader.css">
+  <!--linking to all navbar.css-->
+  <link rel="stylesheet" href="../css/multi-css/all-nav.css"> 
+  <!--linking to all video section css-->
+  <link rel="stylesheet" href="../css/multi-css/all-vid-sec.css">
+  <!-- linking all bottom nav css -->
+  <link rel="stylesheet" href="../css/multi-css/all-bottom-nav.css">
+</head>
+<body>
+<!------------------------------------------->
+<!--            LOADER SECTION             -->
+<!------------------------------------------->
+<div class="loader-container">
+  <img src="../assets/loader.gif" alt="">
+</div>
+<!--=======================================-->
+  
+  
+  
+<div id="page-ka-main-container">
+<!------------------------------------------->
+<!--            NAVBAR SECTION             -->
+<!------------------------------------------->
+<!-- navigation bar -->
+<nav id="navbar">
+  <!--this is nav left side contains logo-->
+  <div id="nav-left">
+     <!-- fab icon -->
+     <img src="../assets/threeLines.png" id="three-line-icon"/>
+     <!-- youtube logo -->
+     <img src="../assets/logo.png"/>
+  </div>
+ 
+ 
+  <!--nav middle, contains search bar for pc-->
+  <div id="nav-middle">
+    <div class="wrapper">
+       <div id="pc-search-box">
+           <input type="text" placeholder="Search for a video">
+           <!-- Image box for search icon-->
+           <div class="image-box-for-search-icon">
+             <img src="../assets/search.png"/>
+           </div>
+       </div>
+     
+       <!-- mic image box -->
+       <div class="image-box-for-mic-icon">
+           <img src="../assets/mic.png"/>
+       </div>
+    </div><!-- wrapper -->
+  </div><!-- nav middle -->
+ 
+ 
+  <div id="nav-right">
+     <a href="html/search-page.html">
+       <img src="../assets/search.png" id="search"/>
+     </a>  
+     <img src="../assets/bell.png"/>
+     <img src="../assets/profile.png"/>
+  </div>
+</nav>
+<!--=======================================-->
+
+
+<!--videos will display here-->
+<div id="videos-container"></div>
+</div><!--page ka main container-->
+
+
+
+<!--===================================-->
+<!--this is bottom nav bar-->
+<!--===================================-->
+<div id="bottom-nav-container">
+ <!--home button-->
+ <button id="home-btn" class="btnBox">
+  <img src="../assets/home.png"/>
+  <span>home</span>
+ </button>
+ 
+ <!--resently watched button-->
+ <a href="../html/history.html">
+  <button id="home-btn" class="btnBox">
+   <img src="../assets/resently-watched.png"/>
+   <span>watched</span>
+  </button>
+ </a>
+ 
+ <!--watch later button-->
+ <a href="">
+  <button id="home-btn" class="btnBox">
+   <img src="../assets/watch-later.png"/>
+   <span>watch later</span>
+  </button>
+ </a>
+ 
+ <!--it's developer button-->
+ <a href="">
+  <button id="home-btn" class="btnBox">
+   <img src="../assets/developer.png"/>
+   <span>developer</span>
+  </button>
+ </a>
+</div><!-- bottom-nav-container -->
+
+
+
+
+<!--linking to fetch-data.js-->
+<script src="../js/after-search.js">
+ 
+<script src="../js/cennector-bet-search-and-after-search.js"></script>
+
+<script src="../js/conector-bet-search-and-video.js"></script>
+</script>
+
+<!-- linking to history connector.js -->
+<script src="js/connector-for-history.js"></script>
+
+<!-- Loader js file -->
+<script src="../js/loader.js"></script>
+</body>
+</html>

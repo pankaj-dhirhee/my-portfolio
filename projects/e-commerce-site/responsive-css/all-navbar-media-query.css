@@ -1,0 +1,109 @@
+/*===================================*/
+/* media query for navbar section */
+/*===================================*/
+@media(min-width: 595px){
+/* doing width 102% or #nav-container */
+#nav-container{
+ width: 100.3%;
+}
+
+
+ /* giving a height to nav-bar container and etc... */
+ #nav-container{
+  height: 50px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(1, 1fr);
+ }
+ 
+ /* styling left section's height */
+ #left-section{
+  max-height: 45px;
+ }
+ 
+ #more{
+  list-style: none;
+ }
+ 
+ /* hiding left section's paragraph */
+ #left-section p{
+  height: 0px;
+  display: none;
+ }
+ 
+ /* showing pankaj's logo in left section */
+ #logo{
+  display: inline-block;
+  height: 90%;
+ }
+ 
+ /* showing unordered list of right section*/
+ #right-section li{
+  display: inline-block;
+  margin: 0px 3%;
+ }
+ #right-section{
+  display: flex;
+  max-height: 50px;
+  padding: 0px;
+  justify-content: space-around;
+  width: 100%;
+ }
+ #right-section a{
+  margin: 3%;
+ }
+ /* styling search bar */
+ #search-bar{
+  width: 96%;
+  height: 80%;
+  padding: 3px 4px;
+  font-size: 16.7px;
+  margin-bottom: ;
+ }
+ 
+ .fab-container{
+  width: auto;
+  padding: 0vh 3vw;
+  font-size: 0.7rem;
+ }
+ 
+ .fab-container1{
+  display: none;
+ }
+ 
+ /* styling fab  image container*/
+ .cross-image-container{
+  width: 9vh;
+  max-width: 30px;
+  aspect-ratio: 1/1;
+  margin-top: 0.5vh;
+  left: 80%;
+ }
+ 
+ #main-container-of-cross-image{
+  height: 12vh;
+  max-height: 35px;
+ }
+ 
+ .links{
+  font-size: 1rem;
+ }
+ 
+ #menu-button{
+ display: inline-block;
+ }
+ 
+ /* giving width to search bar anchor */
+ #search-bar-anchor{
+  display: flex;
+  justify-content: center;
+  max-width: 400px;
+  margin-right: 3px;
+  height: 78%;
+ }
+ 
+}/* media query */
+
+
+

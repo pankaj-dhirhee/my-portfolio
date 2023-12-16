@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Page title</title>
+ <!-- Linking to loader css -->
+ <link rel="stylesheet" href="../css/loader.css">
+ <!-- utils css -->
+ <link rel="stylesheet" href="../css/utils.css">
+ <!-- navbar css -->
+ <link rel="stylesheet" href="../css/navbar.css">
+ <!-- project preview page css -->
+ <link rel="stylesheet" href="../css/project-preview-page.css">
+</head>
+<body>
+<!------------------------------------------->
+<!--            LOADER SECTION             -->
+<!------------------------------------------->
+<div class="loader-container">
+  <div class="loader"></div>
+</div>
+<!--=======================================-->
+  
+  
+<!--==== Navbar Section ====-->
+<nav class="utils-flex-box">
+  <div class="container utils-flex-box">
+     <!-- sub section 1 => Logo -->
+     <div class="sec1-logo-container utils-flex-box">
+        <span>Pankaj</span>
+     </div><!-- sec1-logo-container -->
+   
+     <!------------------------------------------>
+   
+     <!-- sub section 2 => Links -->
+     <div class="sec2-Links-container utils-flex-box">
+        <ul class="utils-flex-box">
+          <a href="">Home</a>
+          <a href="">About</a>
+          <a href="">Contact Us</a>
+          <a href="">Projects</a>
+        </ul>
+     </div><!-- sec2-Links-container -->
+   
+     <!------------------------------------------>
+   
+     <!-- sub section 3 => Buttons -->
+     <div class="sec3-Buttons-container utils-flex-box">
+        <!-- button 1 => Fab Icon Button -->
+        <button class="fab-icon-btn utils-flex-box">
+           <img src="../assets/three-line.png" alt="Three-Lines"/>
+        </button>
+    
+        <!-- button 2 => Contact Button -->
+        <button class="contact-us-button utils-flex-box">
+           <span id="mobile-number">+91123456789</span>
+           <img src="../assets/calling.png" alt="Three-Lines"/>
+        </button>
+     </div><!-- sec3-Buttons-container -->
+  </div><!-- container -->
+</nav>
+<!-- Dropdown Links For Navbar -->
+<div class="sec4-Dropdown-Links-container hide-dropdown-link">
+  <ul class="utils-flex-box">
+      <a href="">Home</a>
+      <a href="">About</a>
+      <a href="">Contact Us</a>
+      <a href="">Projects</a>
+  </ul>
+</div><!-- sec4-Dropdown-Links-container -->
+
+
+
+
+
+<main class="container-of-all-section">
+<!--===========================================-->
+<!--==== Section 1 => View btn and project icon ====-->
+<!--===========================================-->
+<section class="view-btn-and-project-icon-section">
+   <!-- container of project image -->
+   <div id="project-image-and-para-container">
+      <!-- project image -->
+      <img src="../assets/youtube-project-logo.png" alt="icon" id="project-image"/>
+   
+      <!-- project name -->
+      <p id="project-name">
+        shopping website project 
+      </p>
+      
+      <!--------------------------------------->
+      
+      <!-- View buttom -->
+      <div id="view-button-container">
+        <!-- anchor tag for view button -->
+        <a href="" id="anchor-to-see-project">
+           <button> view </button>
+        </a>
+      </div><!--view button container-->
+   </div><!--project image and p container-->
+</section><!-- section -->
+
+
+
+
+
+<!--===========================================-->
+<!--==== Section 2 => Image slider ====-->
+<!--===========================================-->
+<section class="image-slider-section">
+  <!-- anchor tag for zoom page -->
+  <a href="zoom-page-for-project.html">
+    <!--slider container-->
+    <div class="slider-container">
+      
+       <!-- Here image boxes will come through Javascript -->
+       <!-- Javascript => project-preview-page.js -->
+       
+    </div><!--slider container-->
+  </a><!--anchor tag for zoom page-->
+</section>
+
+
+
+
+
+<!--===========================================-->
+<!--==== Section 2 => Image slider ====-->
+<!--===========================================-->
+<section class="About-project-section">
+   <!-- main heading -->
+   <h class="main-heading">
+     About this project
+   </h>
+   
+   <!-- paragraph about project -->
+   <p class="paragraph-about-project">
+     <!-- Here paragraph will come through Javascript -->
+     <!-- Javascript => project-preview-page.js -->
+   </p>
+</section>
+</main><!-- main container of all sections -->
+ 
+ 
+ 
+<!--==== Linking Scripts ====-->
+<!-- Dropdown Links For Navbar Js -->
+<script src="../js/drop-down-links-navbar.js"></script>
+<!-- Projects Array js file -->
+<script src="../js/projects-array.js"></script>
+<!-- Render The projects detail js file -->
+<script src="../js/project-preview-page.js"></script>
+<!-- connector js for array transfer -->
+<script src="../js/connector.js"></script>
+<!-- Loader js file -->
+<script src="../js/loader.js"></script>
+</body>
+</html>

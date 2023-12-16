@@ -1,0 +1,93 @@
+/*reseting default margin & padding*/
+*{
+ margin: 0;
+ padding: 0;
+ overflow: hidden;
+}
+
+/*styling input, means searchbar*/
+#myInput {
+ width: 96vw;
+ font-size: 16px;
+ padding: 5px 4px;
+ border: 1px solid black;
+ margin-bottom: 12px;
+ margin: 9px 0.6vw;
+ outline: none;
+ border-radius: 5px;
+ font-size: 18px;
+ height: 28px;
+}
+
+/*styling unordered list*/
+#myUL {
+ list-style-type: none;
+ padding: 0;
+ margin: 0;
+}
+
+/*styling list-item*/
+li{
+ display: none;
+ width: 98vw;
+ margin-left: 1vw;
+ margin-right: 2vw;
+ align-items: center;
+ background: #f6f6f6;
+ margin-top: 3px;
+ border-radius: 5px;
+}
+
+/*styling main div under li*/
+.main{
+  display: flex;
+  align-items: center;
+}
+
+/*styling image container*/
+.img-container{
+  width: 20vw;
+  aspect-ratio: 1/1;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
+/*styling image of .image-container*/
+.img-container img{
+  height: 97%;
+  background: whitesmoke;
+}
+
+/*styling anchor tag of list-items*/
+#myUL li a {
+ border: none;
+ margin-top: -1px;
+ background-color: ;
+ padding: 12px;
+ text-decoration: none;
+ font-size: 18px; 
+ color: black;
+ display: inline-block;
+ width: 76vw;
+ margin-right: 1vw;
+ align-self: center;
+}
+
+
+@media(min-width: 590px){
+ /*styling input, means searchbar*/
+ #myInput{
+  height: 25px;
+ }
+ /*styling image container*/
+ .img-container{
+   height: 48px;
+   aspect-ratio: 1/1;
+ }
+ /*styling image container ka img*/
+ .img-container img{
+  height: 95%;
+ }
+}

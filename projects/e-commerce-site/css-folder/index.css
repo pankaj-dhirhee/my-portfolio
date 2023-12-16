@@ -1,0 +1,114 @@
+/*styling background container*/
+#background-container{
+ width: 100vw;
+ aspect-ratio: 1/0.67;
+ background: red;
+ background-image: url('../assets-folder/indexbgimg1.jpg');
+ background-size: cover;
+ background-repeat: no-repeat;
+}
+/*styling paragraph of background */
+#background-container p{
+ font-size: 1.5rem;
+ font-weight: bold;
+ text-align: center;
+ padding-top: 10%;
+}
+
+
+
+/*styling all heading for product*/
+.product-heading{
+ font-size: 20px;
+ text-align: center;
+ font-weight: bold;
+ padding: 1vh;
+}
+
+
+
+/*styling category container*/
+.category-container{
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+ width: 100vw;
+ height: auto;
+ background: #f5f5f5;
+}
+/*styling all anchor tags*/
+.category-container a{
+ text-decoration: none;
+}
+/*styling category box container*/
+.box-container{
+ display: inline-block;
+ border: 0.5px solid black;
+ aspect-ratio: 1/1.50;
+ flex-grow: 0.50;
+ flex-shrink: 0.5;
+ margin: 1vh 1vw;
+ border-radius: 7px;
+ overflow: hidden;
+}
+/*styling box image container*/
+.image-container{
+ display: inline-flex;
+ align-items: center;
+ justify-content: center;
+ width: 99.5%;
+ height: 80%;
+ background: #f6f6f6;
+ overflow: hidden;
+}
+/*styling images in boxes*/
+#image1{
+ height: 95%;
+}
+#image2{
+ height: 95%;
+}
+#image3{
+ height: 97%;
+}
+#image4{
+ height: 95%;
+}
+/*styling paragraph container*/
+.para-container{
+ display: inline-flex;
+ flex-direction: column;
+ justify-content: center;
+ width: 100%;
+ height: 20%;
+ border: 0.5 px solid pink;
+ background: #bccdcd;
+}
+/*styling users choice para*/
+.users-choice{
+ font-size: 0.95rem;
+ color: #6f6f6f;
+ padding: 0% 2%;
+}
+/*styling product para*/
+.product-para{
+ font-size: 1rem;
+ font-weight: bold;
+ padding: 0% 2%;
+ color: black;
+}
+
+
+/*styling images of footwear category*/
+#image5{
+ height: 60%;
+}
+#image6{
+ height: 95.5%;
+}
+#image7{
+ width: 97%;
+}
+
+#image8{
+ height: 80%;
+}

@@ -1,0 +1,226 @@
+/*-------------------------------------------*/
+/*          STICKY NAVBAR SECTION            */
+/*-------------------------------------------*/
+.sticky-nav-on-left{
+  width: 5vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  background: #eeeeee;
+  box-sizing: border-box;
+  padding: 8px;
+  z-index: 1;
+  padding-top: 60px;
+  border-right: 1px solid black;
+  display: none;
+}
+/* contains anchor tag in it */
+.box-of-icon{
+  width: 100%;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+}
+/* anchor used as box */
+/* contains icon image & text */
+.sticky-nav-on-left a{
+  width: 100%;
+  text-decoration: none;
+  color: black;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1/1;
+  padding: 4px;
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+/* hover effect on anchor */
+.sticky-nav-on-left a:hover{
+  background: #c1c1c1;
+}
+/* icon image under all anchor */
+.sticky-nav-on-left a img{
+  width: 100%;
+}
+/*==========================================*/
+
+
+
+
+/*-------------------------------------------*/
+/*         LEFT SLIDER NAV SECTION           */
+/*-------------------------------------------*/
+.slidebar-container{
+  height: 100vh;
+  width: 13%;
+  min-width: 200px;
+  position: fixed;
+  top: 0;
+  background: #dedede;
+  box-sizing: border-box;
+  padding: 1.2vmin;
+  padding-top: 78px;
+  padding-bottom: 60px;
+  overflow-y: auto;
+  transition-property: all;
+  transition-duration: 2s;
+  z-index: 8;
+  transform: translatex(-30vw);
+  display: none;
+}
+/* show class to show & show on click or three line */
+.show-the-slidebar-container{
+  display: inline-block;
+  transform: translateX(0px);
+}
+
+
+/*-- Links container --*/
+.shorcut-links-container{
+  width: 100%;
+}
+/* all anchors */
+.shorcut-links-container a{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+/* all images (icons => ho me, explore) */
+.shorcut-links-container a img{
+  width: 25px;
+  margin-right: 15px;
+}
+/* pargraph tag indide anchor */
+.shorcut-links-container a p{
+  color: black;
+}
+/* show mote button */
+.shorcut-links-container .show-more{
+  width: 100%;
+  background: transparent;
+  outline: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+/* image inside the button */
+.shorcut-links-container .show-more img{
+  width: 25px;
+  margin-right: 15px;
+}
+
+
+/*-- Subscribed channel sec --*/
+.subscribed-container{
+  width: 100%;
+  margin: 20px 0px;
+}
+/* subscribed channel boxes */
+.subscribed-boxes{
+  width: 100%;
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+}
+/* images inside subscribed channel boxes */
+.subscribed-boxes img{
+  width: 25px;
+  margin-right: 15px;
+}
+/*==========================================*/
+
+
+
+
+
+/*-------------------------------------------*/
+/*           MEDIA QUERY SECTION             */
+/*-------------------------------------------*/
+
+/* For mobile landdcape mode */
+@media(max-height: 500px){
+  /* Display the Sticky Navbar */
+  .sticky-nav-on-left{
+    display: inline-block;
+  }
+  
+  /* increasing size of icons */
+  .sticky-nav-on-left img{
+    min-width: 23px;
+  }
+}
+
+
+/* For a specific device landscape mode  */
+@media(min-width: 950px) and (max-width: 970px){
+  /* Display the Sticky Navbar */
+  .sticky-nav-on-left{
+    display: inline-block;
+    padding-top: 70px;
+    width: 5vw;
+  }
+}
+
+
+
+/* To hide Bottom Nav and show Left Slider Nav */
+@media(min-height: 1000px){
+  /* Hiding bottom nav */
+  #bottom-nav-container{
+    display: none;
+  }
+  
+  /* Displaying Sticky Navbar */
+  .sticky-nav-on-left{
+    display: inline-block;
+  }
+  
+  /* Adjusting padding top of Slider Nav container */
+  .slidebar-container{
+    padding-top: 8vh;
+  }
+}
+
+
+
+/* For tablets portrate & landscape mode */
+@media(min-width: 1000px){
+  /* Showing sticky navbar */
+  .sticky-nav-on-left{
+    display: inline-block;
+    padding-top: 85px;
+  }
+}
+
+
+
+/* Slider nav will be sticky & always showing */
+@media(min-width: 1440px){
+  /* Always Display the left slidebar */
+  .slidebar-container{
+    display: inline-block;
+    transform: translateX(0px);
+    width: 13%;
+    padding-top: 100px;
+  }
+  
+  /* Hiding sticky nav */
+  .sticky-nav-on-left{
+    display: none;
+  }  
+}
+
+
+
+/* Reducing width of left slider */
+@media(min-width: 2000px){
+  /* Reducing left slidebar width */
+  .slidebar-container{
+    width: 4vw;
+  }
+}

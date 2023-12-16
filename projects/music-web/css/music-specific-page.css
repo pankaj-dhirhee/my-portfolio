@@ -1,0 +1,273 @@
+/* main container or this section */
+#sp-music-ka-main-container{
+  width: 100vw;
+  height: 100dvh;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: sticky;
+  bottom: -100%;
+  background: #222222;
+  display: none;
+  z-index: 50;
+}
+/*==========================================*/
+
+
+
+
+/*-------------------------------------------*/
+/*              NAVBAR SECTION               */
+/*-------------------------------------------*/
+/* navbar, contains back button */
+#sp-nav-for-back{
+  height: 50px;
+  background: black;
+  max-height: 65px;
+  width: 100%;
+  position: relative;
+  z-index: 50;
+}
+
+/* container, contains para & back button image */
+#back-btn-container{
+  height: 90%;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+/* back button image */
+#back-btn{
+  height: 70%;
+  transform: rotate(180deg);
+  display: inline-block;
+}
+/* styling its para (playing) */
+#its-para{
+  color: white;
+  display: inline-block;
+  margin: 0vh 3%;
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+}
+/*==========================================*/
+
+
+
+
+/*-------------------------------------------*/
+/*         POSTURE OF MUSIC SECTION          */
+/*-------------------------------------------*/
+/* container or music posture */
+#music-posture-container{
+  height: 60%;
+  position: relative;
+  aspect-ratio: 1/1.20;
+  border-radius: 5px;
+  margin: 0% 5%;
+  background-image: url("../images/sp-music-bg.jpg");
+  overflow: hidden;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+/* container, contains name or music */
+#music-posture-ka-para-container{
+  background: #416585;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 2% 2%;
+  min-height: 20%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+/* Left side, contains paragraphs */
+#music-posture-ka-para-container #left{
+  width: 85%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* heading, contain text (Music) */
+#music-posture-ka-para-container #heading{
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+/* paragraph for song name */
+#music-posture-ka-para-container p{
+  font-size: 1.07rem;
+  margin-bottom: 3px;
+  color: #e2e2e2 !important;
+}
+/* Right side, contains heart image */
+#music-posture-ka-para-container #right{
+  width: 10%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* heart button (work as favourite song) */
+#heartImage{
+  width: 4%;
+  min-width: 20px;
+}
+/*==========================================*/
+
+
+
+
+/*-------------------------------------------*/
+/*         CONTROLL PANEL SECTION            */
+/*-------------------------------------------*/
+/* contains 'progress bar container' , 'buttons container' */
+#sp-controll-panel-container{
+ height: 100px;
+ width: 100%;
+ margin: 1vh 0%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-wrap: wrap;
+}
+
+
+/*---- container of progress bar (seekbar) ----*/
+#seekbar-container{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ width: 98%;
+ padding: 2% 0%;
+}
+/* seekbar */
+#seekbar{
+ width: 90%;
+}
+/* progress duration */
+#progress-duration{
+ margin-right: 3%;
+ font-size: 1.1rem;
+ display: flex;
+ align-items: center;
+ color: whitesmoke;
+ padding-top: 0.55%;
+}
+/* final duration */
+#final-duration{
+ margin-left: 3%;
+ font-size: 1.1rem;
+ display: flex;
+ align-items: center;
+ padding-top: 0.55%;
+ color: whitesmoke;
+}
+
+
+/*---- buttons container ----*/
+/* contains btn => previous, play, next */
+#btn-container{
+ height: 70%;
+ display: flex;
+ width: 100%;
+ justify-content: space-around;
+ align-items: center;
+}
+/* previous button */
+#previous{
+ height: 50%;
+ transform: rotate(180deg);
+}
+/* play button */
+.play-btn{
+ height: 90%;
+}
+/* next button */
+.next{
+ height: 50%;
+}
+/* next button */
+#sp-sec-next-btn{
+  height: 50%;
+}
+/*==========================================*/
+
+
+
+
+/*-------------------------------------------*/
+/*       UP - DOWN ANIMATION SECTION         */
+/*-------------------------------------------*/
+/*---- class to add up animation ----*/
+.up{
+ display: flex !important;
+ animation-name: harry;
+ animation-duration: 0.5s;
+ animation-fill-mode: forwards;
+}
+/* keyFrame for up animation */
+@keyframes harry{
+  100%{
+    bottom: 0px;
+  }
+}
+
+
+
+/*---- class to add down animation ----*/
+.down{
+ animation-name: harry1;
+ animation-duration: 0.5s;
+ animation-fill-mode: forwards;
+}
+/* keyFrame for doun animation */
+@keyframes harry1{
+ 0%{
+   bottom: 0vh;
+ }
+ 100%{
+   bottom: -100vh;
+   display: none;
+ }
+}
+/*==========================================*/
+
+
+
+
+/*-------------------------------------------*/
+/*           MEDIA QUERY SECTION             */
+/*-------------------------------------------*/
+/*-- Permanent style for mobile --*/
+@media(min-width: 400px) and (max-width: 500px){
+  /* navbar, contains back button */
+  #sp-nav-for-back{
+    height: 60px;
+  }
+
+  /* giving fixed height to controll panel con */
+  #sp-controll-panel-container{
+    height: 120px;
+  }
+}
+
+
+
+/*-- Permanent style for a big mobile --*/
+@media(min-width: 590px) and (max-width: 602px){
+  /* navbar, contains back button */
+  #sp-nav-for-back{
+    height: 70px;
+  }
+ 
+  /* giving fixed height to controll panel con */
+  #sp-controll-panel-container{
+    height: 150px;
+  }
+}
